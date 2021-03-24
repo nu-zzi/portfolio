@@ -26,17 +26,17 @@ $(function () {
 	});
 	$('#btn03').click(function () {
 		$('html, body').animate({
-			scrollTop: $('#mobile').offset().top
+			scrollTop: $('#CSS').offset().top
 		}, 800);
 	});
 	$('#btn04').click(function () {
 		$('html, body').animate({
-			scrollTop: $('#adaptive01').offset().top
+			scrollTop: $('#Script').offset().top
 		}, 800);
 	});
 	$('#btn05').click(function () {
 		$('html, body').animate({
-			scrollTop: $('#shopping').offset().top
+			scrollTop: $('#Responsive').offset().top
 		}, 800);
 	});
 	$('#btn06').click(function () {
@@ -46,18 +46,37 @@ $(function () {
 	});
 	$('#btn07').click(function () {
 		$('html, body').animate({
-			scrollTop: $('#epilogue').offset().top
+			scrollTop: $('#Contact_Me').offset().top
+		}, 800);
+	});
+
+	$('.pulse').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#profile').offset().top
 		}, 800);
 	});
 
 
 	//메뉴클릭시 페이지 이동
+	var logo = $('.mLogo');
 	var menu = $('#menuWrap>ul>li');
 	var contents = $('#contents>div');
 	var btn = $('#floatdiv ul li');
 
 
 	//메뉴클릭시 페이지 이동
+	logo.click(function (event) {
+		event.preventDefault(); //추가로 이벤트를 전파하지 않고 취소
+		var tg = $(this); //현재 해당요소를 tg
+		var i = tg.index(); //일치하는요소를 i라 하고
+		var section = contents.eq(i); //i순번에 해당 컨텐츠를 section에 담아
+		var tt = section.offset().top; //section을 top으로 이동한 값을 tt
+		$('html,body').stop().animate({
+			scrollTop: tt
+		}); //scrollTop:화면이 시작되자 마자 원하는 위치tt로 스크롤 이동
+	});
+
+
 	menu.click(function (event) {
 		event.preventDefault(); //추가로 이벤트를 전파하지 않고 취소
 		var tg = $(this); //현재 해당요소를 tg
@@ -117,6 +136,10 @@ $(function () {
 					moveTop = $(this).next().offset().top;
 				}
 
+				if ($(this).next().attr('id') == "Contact_Me") {
+					triggerAnimation()
+				}
+
 				//마우스휠을 아래에서 위로
 			} else {
 				if ($(this).prev() != undefined) {
@@ -132,10 +155,6 @@ $(function () {
 			});
 		});
 	});
-
-
-
-
 });
 
 $(document).ready(function () {
@@ -178,13 +197,54 @@ $(document).ready(function () {
 
 /* 둥실둥실 */
 
-$(function(){
+$(function () {
 	$('.main_me').DB_springMove({
-		key:'red',                
-		dir:'x',              
-		mirror:3,             
-		radius:10,             
-		motionSpeed:0.08      
+		key: 'red',
+		dir: 'x',
+		mirror: 3,
+		radius: 10,
+		motionSpeed: 0.08
 	})
 
 })
+
+$(document).ready(function () {
+	$(".title").lettering();
+	$(".button").lettering();
+
+	$('.restart-btn').click(function () {
+		animation();
+	});
+});
+
+// $(document).ready(function () {
+// 	animation();
+// }, 1000);
+
+
+function triggerAnimation() {
+	setTimeout(function() {
+		animation();
+	}, 300);
+}
+
+function animation() {
+	var title1 = new TimelineMax();
+	title1.to(".button", 0, {
+		visibility: 'hidden',
+		opacity: 0
+	})
+	title1.staggerFromTo(".title span", 0.5, {
+		ease: Back.easeOut.config(1.7),
+		opacity: 0,
+		bottom: -80
+	}, {
+		ease: Back.easeOut.config(1.7),
+		opacity: 1,
+		bottom: 0
+	}, 0.05);
+	title1.to(".button", 0.2, {
+		visibility: 'visible',
+		opacity: 1
+	})
+}
