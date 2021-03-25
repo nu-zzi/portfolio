@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "compass/css3";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 
 * {
@@ -7,6 +6,11 @@
 	padding: 0;
 	border: 0;
 	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 img {
@@ -119,10 +123,9 @@ a {
 	text-shadow: 0 0 20px #fff;
 }
 
-
 #main {
 	width: 1600px;
-	height: 950px;
+	height: 1000px;
 	position: relative;
 }
 
@@ -130,15 +133,261 @@ a {
 	width: 1600px;
 	height: 1000px;
 	position: relative;
-	background: #ffffbf;
 }
+
+.profile_textBox {
+	position: absolute;
+	top: 17%;
+	left: 40%;
+	width: 700px;
+	background: #b3e0f0;
+	border: 30px solid #add9e8;
+	border-radius: 70px 70px 70px 0;
+	padding: 20px;
+}
+
+.profile_text li {
+	float: left;
+	margin: 20px 52px;
+}
+
+.profile_text li span {
+	font-size: 35px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.profile_text li p {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+/* 프로필 차트 */
+
+.scene {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+#scene-2-content {
+	position: absolute;
+	width: 1000px;
+	min-width: 600px;
+	height: 200px;
+	bottom: 160px;
+	right: -1200px;
+}
+
+.charts {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.chart {
+	float: left;
+	position: relative;
+	width: 200px;
+	margin-right: 30px;
+	height: 100%;
+	display: block;
+}
+
+.circle-mask-outer,
+.circle-mask-inner {
+	overflow: hidden;
+	position: absolute;
+	width: 100px;
+	height: 200px;
+}
+
+.circle-mask-outer.left {
+	left: 0;
+}
+
+.circle-mask-outer.right {
+	right: 0;
+}
+
+.circle-mask-outer.left .circle-mask-inner {
+	left: 100%;
+	-o-transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
+	-moz-transform-origin: 0 50%;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.circle-mask-outer.right .circle-mask-inner {
+	right: 100%;
+	-o-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	-moz-transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.circle-body {
+	border-radius: 50%;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+.circle-mask-outer.left .circle-body {
+	right: 0;
+}
+
+.circle-mask-outer.right .circle-body {
+	left: 0;
+}
+
+#water .circle-body {
+	background-color: #bfefff;
+}
+
+#sunshine .circle-body {
+	background-color: #bbdbff;
+
+}
+
+#birds .circle-body {
+	background-color: #8ec4ea;
+}
+
+#woods .circle-body {
+	background-color: #518ed2;
+}
+
+.chart-content {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 160px;
+	height: 160px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	text-align: center;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.chart-content img {
+	width: 50px;
+	object-fit: contain;
+	padding-top: 25px;
+}
+
+.chart-content .text {
+	left: 9px;
+	line-height: 1;
+	position: relative;
+	top: 10px;
+}
+
+.chart-content .percent-number {
+	font-size: 45px;
+	font-weight: 800;
+	color: #26376f;
+}
+
+.chart-content .percent-symbol {
+	font-size: 25px;
+}
+
+.no-borderradius .circle-mask-outer,
+.no-csstransforms .circle-mask-outer {
+	display: none;
+}
+
+.no-borderradius .chart-content,
+.no-csstransforms .chart-content {
+	top: 0;
+	left: 0;
+	width: 240px;
+	height: 180px;
+	padding-top: 60px;
+	background: url(../img/chart-bg.png) no-repeat 0 0;
+}
+
+.no-borderradius #sunshine .chart-content,
+.no-csstransforms #sunshine .chart-content {
+	background-position: -240px 0;
+}
+
+.no-borderradius #birds .chart-content,
+.no-csstransforms #birds .chart-content {
+	background-position: -480px 0;
+}
+
+.no-borderradius #woods .chart-content,
+.no-csstransforms #woods .chart-content {
+	background-position: -720px 0;
+}
+
 
 #CSS {
 	width: 1600px;
 	height: 1000px;
 	position: relative;
-	background: #bfffcf;
 }
+
+#CSS .css_wrap {
+	width: 1600px;
+	height: 900px;
+	padding-top: 100px;
+}
+
+#CSS .css_L {
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+#CSS .css_L .css_monitor {
+	width: 520px;
+	position: absolute;
+	top: 22%;
+	left: 20%;
+}
+
+#CSS .css_L .css_monitor a {
+	width: 100%;
+}
+
+#CSS .css_L .css_monitor img {
+	width: 100%;
+	object-fit: cover;
+}
+
+#CSS .css_L .css_img {
+	position: absolute;
+	top: 23.5%;
+	left: 21.5%;
+	width: 495px;
+	height: 273px;
+	overflow: hidden;
+}
+
+#CSS .css_L .css_img a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#CSS .css_L .css_img img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
 
 #Script {
 	width: 1600px;
@@ -398,7 +647,7 @@ a {
 #background_wave {
 	width: 100%;
 	min-width: 1200px;
-	height: 950px;
+	height: 100%;
 	position: absolute;
 	z-index: 1;
 	margin: 0 auto;

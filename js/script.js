@@ -223,7 +223,7 @@ $(document).ready(function () {
 
 
 function triggerAnimation() {
-	setTimeout(function() {
+	setTimeout(function () {
 		animation();
 	}, 300);
 }
@@ -248,3 +248,105 @@ function animation() {
 		opacity: 1
 	})
 }
+
+/* 프로필 차트 */
+
+$(function () {
+	activate = 0;
+
+	function setchartpercent() {
+		var $content = $('#scene-2-content'),
+			$charts = $content.find('.chart');
+		$charts.find('.percent-number').eq(0).text(90);
+		$charts.find('.percent-number').eq(1).text(70);
+		$charts.find('.percent-number').eq(2).text(90);
+		$charts.find('.percent-number').eq(3).text(85);
+	};
+	$(window).scroll(function () {
+		var sct = $(this).scrollTop();
+		if (sct >= 1000 && sct < 2000) {
+			activateScene2();
+		} else {
+			no_activateScene2();
+		};
+	});
+
+	//activateScene2();
+
+	function no_activateScene2() {
+		var $content = $('#scene-2-content'),
+			$charts = $content.find('.chart');
+		$content.stop(true).animate({
+			right: '-1200'
+		}, 1200, 'easeInOutQuint');
+		activate = 0;
+		setchartpercent();
+	};
+
+	function activateScene2() {
+		var $content = $('#scene-2-content'),
+			$charts = $content.find('.chart');
+		$content.stop(true).animate({
+			right: '0'
+		}, 1200, 'easeInOutQuint');
+		if (activate == 0) {
+			setchartpercent();
+			$charts.each(function () {
+				var $chart = $(this);
+				var $circleLeft = $chart.find('.left .circle-mask-inner').css({
+					transform: 'rotate(0)'
+				});
+				// $circleRight 왼쪽 div
+				var $circleRight = $chart.find('.right .circle-mask-inner').css({
+					transform: 'rotate(0)'
+				});
+				var $percentNumber = $chart.find('.percent-number');
+				var percentData = $percentNumber.text();
+				$percentNumber.text(0);
+				// var percent 0~60, 0~90, 0~20, 0~45
+				$({
+					percent: 0
+				}).delay(1000).animate({
+					percent: percentData
+				}, {
+					duration: 1500,
+					progress: function () {
+						var now = this.percent,
+							deg = now * 360 / 100,
+							degRight = Math.min(Math.max(deg, 0), 180),
+							degLeft = Math.min(Math.max(deg - 180, 0), 180);
+						$circleRight.css({
+							transform: 'rotate(' + degRight + 'deg)'
+						});
+						$circleLeft.css({
+							transform: 'rotate(' + degLeft + 'deg)'
+						});
+						$percentNumber.text(Math.floor(now));
+					}
+				});
+			});
+		};
+		activate = 1;
+	};
+
+
+});
+
+$(function(){
+	//컴퓨터이미지 호버하면 자동 스크롤
+	$('.css_L .css_img').hover(function(){
+		var ah = $(this).find('a').innerHeight();
+		var img = $(this).find('img');
+		var imgh = $(this).find('img').innerHeight();
+
+		img.stop().animate({top:ah-imgh},5000);
+
+	},function(){
+		var ah = $(this).find('a').innerHeight();
+		var img = $(this).find('img');
+		var imgh = $(this).find('img').innerHeight();
+
+		img.stop().animate({top:0},5000);
+	});
+	
+});
