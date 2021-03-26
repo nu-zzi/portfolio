@@ -11,6 +11,8 @@
 body {
 	overflow-x: hidden;
 	overflow-y: scroll;
+	width: 1400px;
+	margin: 0 auto !important;
 }
 
 img {
@@ -38,23 +40,21 @@ a {
 #wrap {
 	position: relative;
 	margin: 0 auto;
-	width: 1600px;
+	width: 1200px;
 	min-width: 1000px;
 	z-index: 5;
 }
 
 #header {
-	width: 1600px;
+	width: 1200px;
 	height: 70px;
 	position: fixed;
-	left: 50%;
-	margin-left: -800px;
 	top: 35px;
 	z-index: 1000;
 }
 
 #menuWrap {
-	width: 1400px;
+	width: 1200px;
 	height: 50px;
 	position: relative;
 	top: 0;
@@ -74,7 +74,7 @@ a {
 }
 
 #menuWrap h1 {
-	width: 140px;
+	width: 100px;
 	padding-left: 50px;
 	margin-top: -15px;
 	float: left;
@@ -86,11 +86,12 @@ a {
 }
 
 #menuWrap .mLogo a img {
-	width: 65%;
+	width: 100%;
 }
 
 #menu {
-	width: 1200px;
+	width: 850px;
+	margin-left: 12%;
 	float: left;
 }
 
@@ -103,63 +104,81 @@ a {
 	width: calc(100% / 6 - 4px);
 }
 
+#menu li:nth-of-type(3) {
+	width: 70px;
+}
+
 #menu li a {
 	display: block;
 	padding: 2px 4px;
 	line-height: 42px;
-	font-size: 1.7em;
-	font-weight: 800;
+	font-size: 1.3em;
+	font-weight: 400;
 	text-align: center;
-	color: #9d9d9d;
+	color: #8ec4ea;
 	opacity: 1;
 }
 
 #menu li a:hover {
-	color: #fff;
+	color: #26376f;
+	font-weight: 600;
 }
 
 #menu li.on a {
-	color: #fff;
-	text-shadow: 0 0 20px #fff;
+	color: #26376f;
+	font-weight: 600;
 }
 
 #main {
-	width: 1600px;
+	width: 1200px;
 	height: 1000px;
 	position: relative;
 }
 
 #profile {
-	width: 1600px;
+	width: 1200px;
 	height: 1000px;
 	position: relative;
 }
 
+.profile_me {
+	position: absolute;
+	left: 2%;
+	bottom: 10%;
+	width: 25%;
+}
+
+.profile_me img {
+	width: 100%;
+	height: 690px;
+	object-fit: contain;
+}
+
 .profile_textBox {
 	position: absolute;
-	top: 17%;
-	left: 40%;
-	width: 700px;
+	top: 23%;
+	left: 33%;
+	width: 580px;
 	background: #b3e0f0;
-	border: 30px solid #add9e8;
+	border: 20px solid #add9e8;
 	border-radius: 70px 70px 70px 0;
 	padding: 20px;
 }
 
 .profile_text li {
 	float: left;
-	margin: 20px 52px;
+	margin: 20px 37px;
 }
 
 .profile_text li span {
-	font-size: 35px;
-	font-weight: 800;
+	font-size: 30px;
+	font-weight: 700;
 	margin-bottom: 20px;
 	display: block;
 }
 
 .profile_text li p {
-	font-size: 18px;
+	font-size: 16px;
 	padding-bottom: 10px;
 }
 
@@ -173,17 +192,17 @@ a {
 
 #scene-2-content {
 	position: absolute;
-	width: 1000px;
+	width: 800px;
 	min-width: 600px;
-	height: 200px;
-	bottom: 160px;
+	height: 140px;
+	bottom: 185px;
 	right: -1200px;
 }
 
 .charts {
 	position: relative;
 	margin: 0 auto;
-	width: 1000px;
+	width: 800px;
 	height: 100%;
 	overflow: hidden;
 	text-align: center;
@@ -192,7 +211,7 @@ a {
 .chart {
 	float: left;
 	position: relative;
-	width: 200px;
+	width: 140px;
 	margin-right: 30px;
 	height: 100%;
 	display: block;
@@ -202,8 +221,8 @@ a {
 .circle-mask-inner {
 	overflow: hidden;
 	position: absolute;
-	width: 100px;
-	height: 200px;
+	width: 70px;
+	height: 140px;
 }
 
 .circle-mask-outer.left {
@@ -235,8 +254,8 @@ a {
 .circle-body {
 	border-radius: 50%;
 	position: absolute;
-	width: 200px;
-	height: 200px;
+	width: 140px;
+	height: 140px;
 }
 
 .circle-mask-outer.left .circle-body {
@@ -266,10 +285,10 @@ a {
 
 .chart-content {
 	position: absolute;
-	left: 20px;
-	top: 20px;
-	width: 160px;
-	height: 160px;
+	left: 15px;
+	top: 15px;
+	width: 110px;
+	height: 110px;
 	background-color: #ffffff;
 	border-radius: 50%;
 	text-align: center;
@@ -278,26 +297,26 @@ a {
 }
 
 .chart-content img {
-	width: 50px;
+	width: 35px;
 	object-fit: contain;
-	padding-top: 25px;
+	padding-top: 15px;
 }
 
 .chart-content .text {
-	left: 9px;
+	left: 6px;
 	line-height: 1;
 	position: relative;
-	top: 10px;
+	top: 7px;
 }
 
 .chart-content .percent-number {
-	font-size: 45px;
+	font-size: 30px;
 	font-weight: 800;
 	color: #26376f;
 }
 
 .chart-content .percent-symbol {
-	font-size: 25px;
+	font-size: 17px;
 }
 
 .no-borderradius .circle-mask-outer,
@@ -332,91 +351,162 @@ a {
 
 
 #CSS {
-	width: 1600px;
+	width: 1200px;
 	height: 1000px;
 	position: relative;
 }
 
-#CSS .css_wrap {
-	width: 1600px;
-	height: 900px;
-	padding-top: 100px;
+.css_wrap {
+	width: 1200px;
+	height: 800px;
+	margin-top: 100px;
+	background: url(../img/web_mac2.png) no-repeat center center;
+	background-size: cover;
 }
 
-#CSS .css_L {
+.css_L {
 	width: 50%;
 	height: 100%;
 	float: left;
+}
+
+.css_imgBox {
 	position: relative;
-}
-
-#CSS .css_L .css_monitor {
-	width: 520px;
-	position: absolute;
-	top: 22%;
+	width: 500px;
+	height: 350px;
+	top: 30%;
 	left: 20%;
+	z-index: 10;
 }
 
-#CSS .css_L .css_monitor a {
+.css_L .css_monitor {
+	width: 90%;
+	position: absolute;
+	top: 0%;
+	left: 5%;
+	z-index: 2;
+}
+
+.monitor_bg {
+	width: 1060px;
+	height: 660px;
+	background: #9ad0ff52;
+	z-index: 1;
+	position: absolute;
+	top: 20px;
+	left: 70px;
+}
+
+.css_L .css_monitor a {
 	width: 100%;
 }
 
-#CSS .css_L .css_monitor img {
+.css_L .css_monitor img {
 	width: 100%;
 	object-fit: cover;
+	z-index: 1;
 }
 
-#CSS .css_L .css_img {
+.css_L .css_img {
 	position: absolute;
-	top: 23.5%;
-	left: 21.5%;
-	width: 495px;
-	height: 273px;
+	top: 3.5%;
+    left: 6.8%;
+    width: 429px;
+    height: 240px;
 	overflow: hidden;
 }
 
-#CSS .css_L .css_img a {
+.css_L .css_img a {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
 
-#CSS .css_L .css_img img {
+.css_L .css_img img {
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
 
+.css_R {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
 
+.css_R .css_textBox {
+	margin-top: 32%;
+	padding-left: 60px;
+}
+
+.css_R .css_textBox li {
+	margin-bottom: 30px;
+}
+
+.css_R .css_textBox span {
+	font-size: 50px;
+	font-weight: 800;
+	color: #26376f;
+	display: block;
+	margin-bottom: 30px;
+	width: 10%;
+}
+
+.css_R .css_textBox p:first-of-type {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.css_R .css_textBox p:last-of-type {
+	font-size: 22px;
+}
+
+.css_R .css_textBox li a {
+	color: #26376f;
+	background-position: 0 -0.1em;
+    background-image: linear-gradient(to right, #a3e1f9 0, #b9c6f3 100%);
+	padding: 2px 4px;
+	border-radius: 4px;
+	font-size: 13px;
+	background-size: 0 100%;
+	background-repeat: no-repeat;
+	transition: background 0.5s;
+}
+
+.css_R .css_textBox li a:hover {
+	background-size: 100% 100%;
+}
+
+.css_R .css_textBox li img {
+	width: 30px;
+	object-fit: cover;
+}
 
 #Script {
-	width: 1600px;
+	width: 1200px;
 	height: 1000px;
 	position: relative;
-	background: #bfefff;
 }
 
 #Responsive {
-	width: 1600px;
+	width: 1200px;
 	height: 1000px;
 	position: relative;
-	background: #bfbfff;
 }
 
-#graphic {
-	width: 1600px;
+#Portfolio {
+	width: 1200px;
 	height: 1000px;
 	position: relative;
-	background: #bfffef;
 }
 
 #Contact_Me {
-	width: 1600px;
+	width: 1200px;
 	height: 1000px;
 	position: relative;
-	background: #ffbfff;
 }
 
+/* 통통튀는 텍스트 */
 .conBox {
 	transform: translate(-50%, -50%);
 	top: 50%;
@@ -445,7 +535,6 @@ a {
 	position: relative;
 }
 
-
 .button {
 	float: left;
 	position: relative;
@@ -459,16 +548,17 @@ a {
 	cursor: pointer;
 }
 
-
 #profile>*,
 #CSS>*,
 #Script>*,
 #Responsive>*,
-#graphic>*,
+#Portfolio>*,
 #Contact_Me>* {
 	position: absolute;
 }
 
+
+/* 버튼 */
 #floatdiv {
 	position: absolute;
 	left: 0;
@@ -517,9 +607,20 @@ a {
 	background: url(../images/button/before/be05.png) no-repeat;
 }
 
-/* #floatdiv ul li #btn06{display: block; width: 40px; height: 40px; background: url(../images/button/before/be06.png) no-repeat;}
-#floatdiv ul li #btn07{display: block; width: 40px; height: 40px; background: url(../images/button/before/be07.png) no-repeat;}
- */
+#floatdiv ul li #btn06 {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../images/button/before/be06.png) no-repeat;
+}
+
+#floatdiv ul li #btn07 {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../images/button/before/be07.png) no-repeat;
+}
+
 
 #floatdiv ul li:hover #btn01 {
 	background: url(../images/button/after/af01.png) no-repeat;
@@ -541,9 +642,15 @@ a {
 	background: url(../images/button/after/af05.png) no-repeat;
 }
 
-/* #floatdiv ul li:hover #btn06{background: url(../images/button/after/af06.png) no-repeat;}
-#floatdiv ul li:hover #btn07{background: url(../images/button/after/af07.png) no-repeat;}
- */
+#floatdiv ul li:hover #btn06 {
+	background: url(../images/button/after/af06.png) no-repeat;
+}
+
+#floatdiv ul li:hover #btn07 {
+	background: url(../images/button/after/af07.png) no-repeat;
+}
+
+
 #floatdiv ul li.active #btn01 {
 	background: url(../images/button/after/af01.png) no-repeat;
 }
@@ -564,18 +671,24 @@ a {
 	background: url(../images/button/after/af05.png) no-repeat;
 }
 
-/* #floatdiv ul li.active #btn06{background: url(../images/button/after/af06.png) no-repeat;}
-#floatdiv ul li.active #btn07{background: url(../images/button/after/af07.png) no-repeat;}
- */
+#floatdiv ul li.active #btn06 {
+	background: url(../images/button/after/af06.png) no-repeat;
+}
+
+#floatdiv ul li.active #btn07 {
+	background: url(../images/button/after/af07.png) no-repeat;
+}
+
 
 
 /* 메인배너 */
 
 #main .main_me {
 	position: absolute;
-	left: 0%;
-	bottom: 0%;
+	left: -5%;
+	bottom: 5%;
 	z-index: 1;
+	width: 100%;
 }
 
 #main .pulse {
@@ -619,16 +732,6 @@ a {
 	}
 }
 
-.profile_me {
-	position: absolute;
-	left: 5%;
-	bottom: 10%;
-}
-
-.profile_me img {
-	width: 600px;
-	object-fit: cover;
-}
 
 .contact_me {
 	width: 500px;
@@ -648,7 +751,6 @@ a {
 	width: 100%;
 	min-width: 1200px;
 	height: 100%;
-	position: absolute;
 	z-index: 1;
 	margin: 0 auto;
 }

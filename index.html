@@ -51,7 +51,7 @@
             <li><span id="btn04"></span></li>
             <li><span id="btn05"></span></li>
             <li><span id="btn06"></span></li>
-            <li><span id="btn07"></span></li>
+            <li><span id="btn07" onclick="triggerAnimation();"></span></li>
         </ul>
     </div>
     <div id="background_wave">
@@ -65,11 +65,11 @@
                 </h1>
                 <ul id="menu" class="cf">
                     <li><a href="#main"></a></li>
-                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#profile">Profile</a></li>
                     <li><a href="#CSS">CSS</a></li>
                     <li><a href="#Script">Script</a></li>
                     <li><a href="#Responsive">Responsive</a></li>
-                    <li><a href="#graphic">GRAPHIC</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="#Contact_Me" onclick="triggerAnimation();">Contact_Me</a></li>
                 </ul>
                 <!-- <a href="#" onclick="bookmark()" class="fay">FAVORITE</a> -->
@@ -208,23 +208,79 @@
                     <div class="css_L">
                         <div class="css_monitor">
                             <a href="#" target="_blank">
-                                <img src="img/web_monitor.png" alt="모니터">
+                                <img src="img/web_mac2.png" alt="모니터">
                             </a>
                         </div>
-                        <div class="css_img">
-                            <a href="#" target="_blank">
-                                <img src="img/pull_HiteJinro.png" alt="하이트진로">
-                            </a>
+                        <div class="css_imgBox">
+                            <div class="css_monitor">
+                                <a href="#" target="_blank">
+                                    <img src="img/web_monitor.png" alt="모니터">
+                                </a>
+                            </div>
+                            <div class="css_img">
+                                <a href="#" target="_blank">
+                                    <img src="img/pull_HiteJinro.png" alt="하이트진로">
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="css_R">
-                        <div>
-                            <ul>
+                        <div class="css_textBox">
+                            <ul class="cf">
                                 <li>
                                     <span>CSS</span>
                                     <p>하이트 진로</p>
-                                    <p>css만을 이용해 제작한 페이지입니다.</p>  
+                                    <p>css만을 이용해 제작한 페이지입니다.</p>
+                                </li>
+                                <li>
+                                    <a href="#">main</a>
+                                    <a href="#">sub1</a>
+                                    <a href="#">sub2</a>
+                                    <a href="#">sub3</a>
+                                    <a href="#">sub4</a>
+                                    <a href="#">sub5</a>
+                                    <a href="#">login</a>
+                                </li>
+                                <li>
+                                    <img src="img/icon_firefox.png" alt="파이어폭스">
+                                    <img src="img/icon_Chrome.png" alt="크롬">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Script" class="mn">
+                <div class="css_wrap cf">
+                    <div class="css_L">
+                        <div class="css_monitor">
+                            <a href="#" target="_blank">
+                                <img src="img/web_mac2.png" alt="모니터">
+                            </a>
+                        </div>
+                        <div class="css_imgBox">
+                            <div class="css_monitor">
+                                <a href="#" target="_blank">
+                                    <img src="img/web_monitor.png" alt="모니터">
+                                </a>
+                            </div>
+                            <div class="css_img">
+                                <a href="#" target="_blank">
+                                    <img src="img/pull_HiteJinro.png" alt="하이트진로">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="css_R">
+                        <div class="css_textBox">
+                            <ul class="cf">
+                                <li>
+                                    <span>Script</span>
+                                    <p>하이트 진로</p>
+                                    <p>Script를 이용해 제작한 페이지입니다.</p>
                                 </li>
                                 <li>
                                     <a href="#">메인</a>
@@ -236,8 +292,8 @@
                                     <a href="#">로그인</a>
                                 </li>
                                 <li>
-                                    <img src="img/icon_firefox.png" alt="">
-                                    <img src="img/icon_explorer.png" alt="">
+                                    <img src="img/icon_firefox.png" alt="파이어폭스">
+                                    <img src="img/icon_Chrome.png" alt="크롬">
                                 </li>
                             </ul>
                         </div>
@@ -245,15 +301,54 @@
                 </div>
             </div>
 
-            <div id="Script" class="mn">
-
-            </div>
-
             <div id="Responsive" class="mn">
+                <div class="css_wrap cf">
+                    <div class="css_L">
+                        <div class="css_monitor cf">                    
+                        </div>
+                        <div class="css_imgBox">
+                            <div class="css_monitor">
+                                <a href="#" target="_blank">
+                                    <img src="img/web_monitor.png" alt="모니터">
+                                </a>
+                            </div>
+                            <div class="css_img">
+                                <a href="#" target="_blank">
+                                    <img src="img/pull_HiteJinro.png" alt="하이트진로">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="monitor_bg"></div>
+                    </div>
 
+                    <div class="css_R">
+                        <div class="css_textBox">
+                            <ul class="cf">
+                                <li>
+                                    <span>Responsive</span>
+                                    <p>하이트 진로</p>
+                                    <p>반응형 페이지 입니다.</p>
+                                </li>
+                                <li>
+                                    <a href="#">메인</a>
+                                    <a href="#">서브1</a>
+                                    <a href="#">서브2</a>
+                                    <a href="#">서브3</a>
+                                    <a href="#">서브4</a>
+                                    <a href="#">서브5</a>
+                                    <a href="#">로그인</a>
+                                </li>
+                                <li>
+                                    <img src="img/icon_firefox.png" alt="파이어폭스">
+                                    <img src="img/icon_Chrome.png" alt="크롬">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div id="graphic" class="mn">
+            <div id="Portfolio" class="mn">
 
             </div>
 

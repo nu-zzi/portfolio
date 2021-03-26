@@ -41,7 +41,7 @@ $(function () {
 	});
 	$('#btn06').click(function () {
 		$('html, body').animate({
-			scrollTop: $('#graphic').offset().top
+			scrollTop: $('#Portfolio').offset().top
 		}, 800);
 	});
 	$('#btn07').click(function () {
