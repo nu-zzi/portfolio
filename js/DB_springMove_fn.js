@@ -88,7 +88,7 @@
                     }
                     u.top = l.t;
                     var p = j + Math.round(Math.random() * 1000);
-                    f.append("<" + m + " " + v[5] + '="' + p + '"></' + m + ">");
+                    //f.append("<" + m + " " + v[5] + '="' + p + '"></' + m + ">");
                     u.left = l.t;
                     f.find("." + p).css(u).html(j).delay().queue(function () {
                         a(this).css(u).html(j).show()
