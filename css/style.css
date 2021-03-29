@@ -157,7 +157,6 @@ a {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-<<<<<<< HEAD
 }
 
 #main #nextButton {
@@ -206,56 +205,6 @@ a {
 	}
 }
 
-=======
-}
-
-#main #nextButton {
-	width: 100%;
-	position: absolute;
-	bottom: 10px;
-	font-size: 0;
-	text-align: center;
-}
-
-#main .pulse {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	text-align: center;
-	line-height: 46px;
-	font-size: 15px;
-	color: #fff;
-	background: rgb(38, 55, 111);
-	border-radius: 50%;
-	box-shadow: 0 0 0 0 rgba(38, 55, 111, .5);
-	-webkit-animation: pulse 1.5s infinite;
-	animation: pulse 1.5s infinite;
-	cursor: pointer;
-	z-index: 9999;
-}
-
-#main .pulse:hover {
-	-webkit-animation: none;
-	animation: none;
-}
-
-@keyframes pulse {
-	0% {
-		transform: scale(0.9);
-	}
-
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 20px rgba(38, 55, 111, 0);
-	}
-
-	100% {
-		transform: scale(0.9);
-		box-shadow: 0 0 0 0 rgba(38, 55, 111, 0);
-	}
-}
-
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
 
 
 /* #profile {
@@ -321,11 +270,7 @@ a {
 	width: 800px;
 	min-width: 600px;
 	height: 140px;
-<<<<<<< HEAD
-	top: calc(23% + 350px);
-=======
 	top: calc(23% + 340px);
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
 	right: -1200px;
 }
 
@@ -479,7 +424,6 @@ a {
 }
 
 
-<<<<<<< HEAD
 #CSS,
 #Script,
 #Responsive {
@@ -492,13 +436,6 @@ a {
 	width: 100%;
 	height: 100%;
 }
-=======
-#CSS {
-	background: url(../img/web_mac2.png) no-repeat center center;
-	background-size: auto calc(100% - 105px);
-	background-position-y: 95px;
-} 
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
 
 .css_L {
 	width: 60%;
@@ -508,27 +445,17 @@ a {
 
 .css_imgBox {
 	position: relative;
-<<<<<<< HEAD
 	width: 650px;
     height: 450px;
     top: 20%;
     left: 7%;
-=======
-	width: 500px;
-	height: 350px;
-	top: 30%;
-	left: 20%;
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
 }
 
 .css_L .css_monitor {
 	width: 100%;
 	position: absolute;
 	top: 0%;
-<<<<<<< HEAD
-	left: 0%;
-=======
-	left: 5%;
+	left: 0;
 }
 
 .monitor_bg {
@@ -538,7 +465,6 @@ a {
 	position: absolute;
 	top: 20px;
 	left: 70px;
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
 }
 
 .css_L .css_monitor a {
@@ -625,16 +551,9 @@ a {
 	object-fit: cover;
 }
 
-<<<<<<< HEAD
+
 #Portfolio .portcont1 {
 	padding-top: 135px;
-=======
-/* #Script {
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
-	width: 1200px;
-	height: 724px;
-	margin: 0 auto;
-	overflow: hidden;
 }
 
 #Portfolio .portcont1 h2 {
@@ -710,33 +629,6 @@ a {
 	display: none;
 }
 
-.loadmore {
-	display: block;
-	width: 300px;
-	height: 50px;
-	margin: 50px auto 50px auto;
-	background: #000066;
-	color: #ffffff;
-	cursor: pointer;
-}
-
-#loadmore {
-	width: 1200px;
-<<<<<<< HEAD
-	height: 624px;
-	margin: 0 auto;
-}
-
-.close {
-	display: none;
-	width: 300px;
-	height: 50px;
-	margin: 50px auto 50px auto;
-	background: #000066;
-	color: #ffffff;
-	cursor: pointer;
-}
-
 #Contact_Me .contact_wrap {
 	width: 950px;
     height: 630px;
@@ -748,20 +640,6 @@ a {
 }
 
 .contact_me {
-	width: 350px;
-	position: absolute;
-	left: 5%;
-	top: 10%;
-}
-
-.contact_me img {
-	width: 100%;
-=======
-	height: 1000px;
-	position: relative;
-} */
-
-.contact_me {
 	width: 500px;
 	left: 35%;
 	bottom: 10%;
@@ -769,9 +647,9 @@ a {
 
 .contact_me img {
 	width: 500px;
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
 	object-fit: cover;
 }
+
 
 /* 통통튀는 텍스트 */
 .conBox {
@@ -817,23 +695,11 @@ a {
     padding: 7px 13px;
     border-radius: 10px;
 }
-<<<<<<< HEAD
 
 .button:hover {
 	background: #94a9f7;
 	color: #e0e7ff;
 }
-=======
-/* 
-#profile>*,
-#CSS>*,
-#Script>*,
-#Responsive>*,
-#Portfolio>*,
-#Contact_Me>* {
-	position: absolute;
-} */
->>>>>>> 03ad9523a3e939f88e39adeda93c20ebc348d11e
 
 /* 버튼 */
 #floatdiv {
