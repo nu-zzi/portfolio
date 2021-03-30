@@ -148,11 +148,28 @@
         height: 480px;
         min-width: 768px;
     }
-
-    section #main_img .pc_main ul li {
-        height: 480px;
+    
+    section #main_img #slide_img_wrap1 {
+        height: 100%;
     }
 
+    section #main_img #slide_img_wrap1 .slide_img {
+        height: 100%;
+    }
+
+    section #main_img .pc_main {
+        height: 100%;
+    }
+
+    section #main_img .pc_main ul {
+        height: 100%;
+    }
+
+    section #main_img .pc_main ul li {
+        height: 100%;
+    }
+
+    
 
     /* 에넥스딜 */
     section #main_cont1 {
@@ -161,8 +178,20 @@
 
     section #main_cont1 #cont1_list {
         width: 95%;
-        margin-left: 10px;
         clear: both;
+    }
+    
+
+    section #main_cont1 #cont1_list .list1 ul {
+        width: 330px;
+    }
+
+    section #main_cont1 #cont1_list .list2 ul {
+        width: 330px;
+    }
+
+    section #main_cont1 #cont1_list .list2 h3 {
+        margin-left: 0;
     }
 
     section #main_cont2 {
