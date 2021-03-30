@@ -5,6 +5,7 @@ $(function () {
     _contactPageLettering();
     _profilePageChartPercent();
     _CSSPageAutoScroll();
+    _CSSSwiper();
     _portfolioLoadmore();
     _contactPageLettering();
 });
@@ -314,6 +315,43 @@ function _CSSPageAutoScroll() {
             top: 0
         }, 3500);
     });
+}
+
+function _CSSSwiper() {
+    var swiper1 = new Swiper('.swiper1', {
+        spaceBetween: 30, //슬라이드 간격
+        loop: true, //무한반복
+        pagination: {
+          el: '.swiper-pagination1',
+          clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: '.next1', //다음버튼 클래스명
+          prevEl: '.prev1', //이전버튼 클래스명
+        }
+      });
+  
+      var swiper2 = new Swiper('.swiper2', {
+        slidesPerView: 3, // 동시에 보여줄 슬라이드 갯수
+        spaceBetween: 30, //슬라이드 간격
+        /* loop: true, //무한반복 */
+        pagination: {
+          el: '.swiper-pagination2',
+          clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
+        }
+      });
+  
+      var swiper3 = new Swiper('.swiper3', {
+        spaceBetween: 30, //슬라이드 간격
+        /* loop: true, //무한반복 */
+        pagination: {
+          el: '.swiper-pagination3',
+          clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
+        }
+      });
 }
 
 function _portfolioLoadmore() {

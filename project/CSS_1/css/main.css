@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+#main_banner {
+    min-width: 1200px;
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+}
+
+#main_banner ul {
+    position: absolute;
+    width: -webkit-calc(100% * 2);
+    width: -moz-calc(100% * 2);
+    width: calc(100% * 2);
+    height: 100%;
+    display: flex;
+    animation: slide 8s infinite;
+}
+
+#main_banner li {
+    width: 100%;
+    height: 100%;
+}
+
+#main_banner li:nth-of-type(1) {
+    background: url(../images/main_banner1.jpg) no-repeat;
+    background-size: cover;
+}
+
+#main_banner li:nth-of-type(2) {
+    background: url(../images/main_banner2.jpg) no-repeat;
+    background-size: cover;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    80% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡmenuㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #765747;
+    margin-left: 15px;
+}
+
+.menu {
+    width: 100%;
+    height: 390px;
+    margin-top: 80px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.menu_subtext {
+    position: absolute;
+    left: 200px;
+    top: 13px
+}
+
+.menu_subtext li {
+    float: left;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.menu_subtext li a {
+    color: #666;
+}
+
+.menu_subtext li a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+.menu_all {
+    position: absolute;
+    right: 22px;
+    top: 19px;
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.menu_all:hover {
+    color: #222;
+    font-weight: 700;
+}
+
+.menu_list {
+    margin-top: 54px;
+}
+
+.menu_item {
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #dedede;
+    width: calc( (100% - (15px * 4)) / 5 );
+    box-sizing: border-box;
+}
+
+/* child는 헷갈리니깐 type 써 */
+.menu_item:last-of-type {
+    margin: 0;
+}
+
+.menu_item {
+    display: block;
+    position: relative;
+}
+
+.menu_item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu_text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 237px;
+    font-size: 13px;
+    background-color: rgba(144, 142, 142, 0.8);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+    color: #555555;
+    padding: 10px;
+}
+
+.menu_item:hover .menu_text {
+    opacity: 1;
+}
+
+.menu_text p {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #111;
+}
+
+.menu_text p:nth-of-type(2){
+    font-size: 15px;
+}
+
+
+.menu_item .text-wrapper {
+    padding-bottom: 7px;
+}
+
+/* 여기 80주면 여기 마진 8픽셀떄문에 못들어가 */
+.img_bottom_L {
+    width: 78%; 
+    padding-left: 15px;
+    padding-top: 3px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img_bottom_L p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.img_bottom_L span {
+    font-size: 14px;
+    font-weight: 800;
+    font-style: italic;
+    color: #c57638;
+}
+
+.img_bottom_R {
+    float: right;
+    font-size: 30px;
+    width: 22%;
+    padding-top: 3px;
+}
+
+.img_bottom_R i {
+    color: #765747;
+}
+
+.img_bottom_R i:hover {
+    color: #6b2704;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡnewsㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.news {
+    width: 100%;
+    clear: both;
+    position: relative;
+    margin: 80px 0;
+}
+
+.news_all {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.news_all:hover {
+    color: #222;
+    font-weight: 700;
+}
+
+.news_list {
+    margin-top: 55px;
+
+}
+
+.news_item {
+    float: left;
+    margin-right: 16px;
+    width: calc((100% - (16px * 3)) / 4);
+}
+
+.news_item:last-of-type {
+    margin: 0;
+}
+
+.news_item a {
+    display: block;
+    height: 208px;
+}
+
+.news_item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news_text {
+    text-align: left;
+    padding: 10px 8px;
+}
+
+.news_text p {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 13px;
+}
+
+.news_text span {
+    font-size: 13px;
+    letter-spacing: -1px;
+    color: #666;
+    /* 단어로 줄바꿀때*/
+    word-break: keep-all;
+    /* 패딩, 마진주기위해 블록으로 바꿈 */
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.news_text span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡstoreㅡㅡㅡㅡㅡㅡㅡ */
+
+.store {
+    width: 50%;
+    float: left;
+}
+
+.store a {
+    float: left;
+    width: 50%;
+}
+
+.map_box {
+    width: 50%;
+    margin: 160px 0;
+    float: left;
+}
+
+.map_box p {
+    word-break: keep-all;
+    font-size: 13px;
+    font-weight: 800;
+    color: #765747;
+    margin-bottom: 10px;
+}
+
+.map_box .search {
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 20px;
+    margin-right: 2px;
+}
+
+.map_box .search_icon {
+    background-color: #765747;
+    color: #fff;
+    border-radius: 4px;
+    width: 40px;
+    height: 22px;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.map_box .search_icon:hover {
+    background-color: #624130;
+}
+
+
+.franchise {
+    width: 50%;
+    float: right;
+}
+
+.franchise h2 {
+    margin-bottom: 80px;
+}
+
+.franchise a {
+    float: left;
+    width: 262px;
+    margin-top: 30px;
+}
+
+.franchise .franchise_text {
+    float: left;
+    font-size: 14px;
+    padding: 45px 0 0 50px;
+    letter-spacing: -1px;
+    width: calc(100% - 262px);
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.franchise_text p:nth-of-type(1) {
+    font-size: 24px;
+    color: #774f3a;
+    font-weight: 800;
+} 
+
+.franchise_text p:nth-of-type(2) {
+    font-size: 40px;
+    color: #570806;
+    font-weight: 800;
+}
+
+.franchise_text p:nth-of-type(3) {
+    font-size: 13px;
+    color: #774f3a;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.franchise_text a {
+    background-color: #765747;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    width: 155px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+}
+
+.franchise_text a:hover {
+    background-color: #624130;
+}
+

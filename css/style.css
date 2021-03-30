@@ -445,10 +445,10 @@ a {
 
 .css_imgBox {
 	position: relative;
-	width: 650px;
+	width: 600px;
     height: 450px;
-    top: 20%;
-    left: 7%;
+    top: 15%;
+    left: 11%;
 }
 
 .css_L .css_monitor {
@@ -456,15 +456,6 @@ a {
 	position: absolute;
 	top: 0%;
 	left: 0;
-}
-
-.monitor_bg {
-	width: 1060px;
-	height: 660px;
-	background: #9ad0ff52;
-	position: absolute;
-	top: 20px;
-	left: 70px;
 }
 
 .css_L .css_monitor a {
@@ -479,8 +470,7 @@ a {
 .css_L .css_img {
 	position: absolute;
 	top: 9.5%;
-    left: -0.2%;
-    width: 650px;
+    width: 600px;
     height: 400px;
 	overflow: hidden;
 }
@@ -494,7 +484,15 @@ a {
 .css_L .css_img img {
 	position: absolute;
 	top: 0;
+	left: 0;
 	width: 100%;
+}
+
+.css_L .css_img p {
+	font-size: 38px;
+	color: #26376f;
+	background: #999;
+	padding: 150px 50px;
 }
 
 .css_R {
@@ -504,12 +502,13 @@ a {
 }
 
 .css_R .css_textBox {
-	margin-top: 50%;
-	padding-left: 30px;
+	margin-top: 30%;
+	padding-left: 25px;
 }
 
 .css_R .css_textBox li {
 	margin-bottom: 30px;
+	text-align: left;
 }
 
 .css_R .css_textBox span {
@@ -551,6 +550,33 @@ a {
 	object-fit: cover;
 }
 
+.swiper-container {
+	width: 95%;
+	height: 569px;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	/* 내용을 중앙정렬 하기위해 flex 사용 */
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	/* 좌우 기준 중앙정렬 */
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	/* 위아래 기준 중앙정렬 */
+	align-items: center;
+  }
 
 #Portfolio .portcont1 {
 	padding-top: 135px;
@@ -640,13 +666,14 @@ a {
 }
 
 .contact_me {
-	width: 500px;
-	left: 35%;
-	bottom: 10%;
+	width: 400px;
+	left: 5%;
+	bottom: 4%;
+	position: absolute;
 }
 
 .contact_me img {
-	width: 500px;
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -663,7 +690,7 @@ a {
 .titleBox {
 	color: #fff;
 	font-size: 42px;
-	line-height: 60px;
+	line-height: 35px;
 	width: 555px;
 
 }
@@ -678,6 +705,9 @@ a {
 	font-weight: 500;
 }
 
+.titleBox span:first-of-type {
+	margin-bottom: 25px;
+}
 
 
 .button {
@@ -842,7 +872,7 @@ a {
 	bottom: 0;
 	background: #dfecff;
 	display: inline-block;
-	height: 21%;
+	height: 26%;
 	width: 10px;
 	position: absolute;
 	z-index: 5 !important;
@@ -857,7 +887,7 @@ a {
 	bottom: 0;
 	background: #b5e4ffb0;
 	display: inline-block;
-	height: 17%;
+	height: 23%;
 	width: 10px;
 	position: absolute;
 	z-index: 5 !important;
@@ -872,7 +902,7 @@ a {
 	bottom: 0;
 	background: #afe1ff;
 	display: inline-block;
-	height: 13%;
+	height: 18%;
 	width: 10px;
 	position: absolute;
 	z-index: 5 !important;
@@ -887,7 +917,7 @@ a {
 	bottom: 0;
 	background: #90c3f959;
 	display: inline-block;
-	height: 10%;
+	height: 15%;
 	width: 10px;
 	position: absolute;
 	z-index: 5 !important;
@@ -900,56 +930,56 @@ a {
 /* amplitude animation*/
 @keyframes dostuff {
 	0% {
-		height: 21%;
-	}
-
-	50% {
 		height: 26%;
 	}
 
+	50% {
+		height: 31%;
+	}
+
 	100% {
-		height: 21%;
+		height: 26%;
 	}
 }
 
 @keyframes dostuff_mid {
 	0% {
-		height: 17%;
+		height: 23%;
 	}
 
 	50% {
-		height: 22%;
+		height: 27%;
 	}
 
 	100% {
-		height: 17%;
+		height: 23%;
 	}
 }
 
 @keyframes dostuff_bot {
 	0% {
-		height: 13%;
+		height: 18%;
 	}
 
 	50% {
-		height: 17%;
+		height: 23%;
 	}
 
 	100% {
-		height: 13%;
+		height: 18%;
 	}
 }
 
 @keyframes dostuff_light {
 	0% {
-		height: 10%;
+		height: 15%;
 	}
 
 	50% {
-		height: 14%;
+		height: 19%;
 	}
 
 	100% {
-		height: 10%;
+		height: 15%;
 	}
 }

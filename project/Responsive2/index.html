@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="에넥스 반응형 , 반응형, enex, adaptive web" />
+	<meta name="description" content="에넥스 반응형 웹 페이지 입니다." />
+	<meta name="Author" content="류지혜" />
+	<title>에넥스</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="top_btn">
+		<a href="#"><img src="img/top_btn.jpg" width="60" height="60" alt="top_btn"></a>
+	</div>
+	<header id="header_wrap">
+		<div id="header_fixed">
+			<div id="header">
+
+				<div id="gnb" class="cf">
+					<ul class="top_gnb">
+						<li><a href="#">장바구니</a></li>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+					</ul>					
+				</div>
+				<nav id="top_menu_wrap">
+					<h1 class="logo">
+						<a href="index.html"><img src="img/logo.png" width="130" height="45" alt="logo" /></a>
+					</h1>
+					<div class="m_nav_btn">
+						<a href="#"><img src="img/m_nav_btn.png" alt="m_btn" width="26" height="24"></a>
+					</div>
+
+					<!-- 모바일네비 -->
+					<div id="mo_nav">
+						<div class="mo_close">
+							<a href="#"><img src="img/icon_close_m.png" alt="닫기"></a>
+						</div>
+						<div class="mo_bg_nav">
+							<div class="mo_top_gnb">
+								<ul class="top_gnb">
+									<li><a href="#">장바구니</a></li>
+									<li><a href="#">로그인</a></li>
+									<li><a href="#">회원가입</a></li>
+								</ul>
+							</div>
+							<ul class="mo_depth1">
+								<li class="border">
+									<div><a href="#">붙박이장 시공</a></div>
+									<ul class="mo_depth2">
+										<li><a href="#">여닫이붙박이장</a></li>
+										<li><a href="#">슬라이딩붙박이장</a></li>
+										<li><a href="#">서재형붙박이장</a></li>
+										<li><a href="#">현관붙박이장</a></li>
+									</ul>
+								</li>
+								<li>
+									<div><a href="#">침실</a></div>
+									<ul class="mo_depth2">
+										<li><a href="#">침대</a></li>
+										<li><a href="#">매트리스</a></li>
+										<li><a href="#">서랍장</a></li>
+										<li><a href="#">화장대</a></li>
+									</ul>
+								</li>
+								<li>
+									<div><a href="#">주방</a></div>
+									<ul class="mo_depth2">
+										<li><a href="#">식탁/테이블</a></li>
+										<li><a href="#">아일랜드/홈바</a></li>
+										<li><a href="#">수납장/렌지대</a></li>
+										<li><a href="#">식탁의자</a></li>
+									</ul>
+								</li>
+								<li>
+									<div><a href="#">거실</a></div>
+									<ul class="mo_depth2">
+										<li><a href="#">소파</a></li>
+										<li><a href="#">거실장</a></li>
+										<li><a href="#">파티션</a></li>
+										<li><a href="#">중문</a></li>
+									</ul>
+								</li>
+								<li>
+									<div><a href="#">생활용품</a></div>
+									<ul class="mo_depth2">
+										<li><a href="#">주방</a></li>
+										<li><a href="#">침실</a></li>
+										<li><a href="#">욕실</a></li>
+										<li><a href="#">수납장</a></li>
+										<li><a href="#">기타소품</a></li>
+									</ul>
+								</li>
+								<li class="color">
+									<div>
+										<a href="#">입점 브랜드가전</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="nav">
+						<div class="drop_bg"><span></span></div>
+						<div class="bg_menu">
+							<ul class="depth1">
+								<li><a href="#"><span>붙박이장 시공</span></a>
+									<ul class="depth2">
+										<li><a href="#">여닫이붙박이장</a></li>
+										<li><a href="#">슬라이딩붙박이장</a></li>
+										<li><a href="#">서재형붙박이장</a></li>
+										<li><a href="#">현관붙박이장</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>침실</span></a>
+									<ul class="depth2">
+										<li><a href="#">침대</a></li>
+										<li><a href="#">매트리스</a></li>
+										<li><a href="#">서랍장</a></li>
+										<li><a href="#">화장대</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>주방</span></a>
+									<ul class="depth2">
+										<li><a href="#">식탁/테이블</a></li>
+										<li><a href="#">아일랜드/홈바</a></li>
+										<li><a href="#">수납장/렌지대</a></li>
+										<li><a href="#">식탁의자</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>거실</span></a>
+									<ul class="depth2">
+										<li><a href="#">소파</a></li>
+										<li><a href="#">거실장</a></li>
+										<li><a href="#">파티션</a></li>
+										<li><a href="#">중문</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>생활용품</span></a>
+									<ul class="depth2">
+										<li><a href="#">주방</a></li>
+										<li><a href="#">침실</a></li>
+										<li><a href="#">욕실</a></li>
+										<li><a href="#">수납장</a></li>
+										<li><a href="#">기타소품</a></li>
+									</ul>
+								</li>
+								<li class="li_last"><a href="#"><span>입점 브랜드가전</span></a>
+									<ul class="depth2">
+										<li><a href="#">LG전자</a></li>
+										<li><a href="#">삼성</a></li>
+										<li><a href="#">쿠첸</a></li>
+										<li><a href="#">위니아</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div> <!-- class="nav" -->
+
+				</nav> <!-- id="top_menu_wrap" -->
+			</div> <!-- id="header" -->
+		</div><!--  id="header_fixed" -->
+	</header> <!-- id="header_wrap" -->
+
+	<section>
+		<div id="main_img">
+			<!-- 메인 배너 박스 -->
+			<div id="slide_btn">
+				<div class="slide_stop">
+					<ul>
+						<li class="sd_stop"><a href="#">stop</a></li>
+						<li class="sd_start"><a href="#">play</a></li>
+					</ul>
+				</div>
+				<div class="slide_num">
+					<ul>
+						<li class="on"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="slide_img_wrap1">
+				<div class="slide_img">
+					<div class="pc_main">
+						<ul>
+							<li class="visual_0"><a href="#">배너이미지1</a></li>
+							<li class="visual_1"><a href="#">배너이미지2</a></li>
+							<li class="visual_2"><a href="#">배너이미지3</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> <!-- id="main_img" -->
+
+		<!-- 에넥스딜,매거진 -->
+		<div id="main_cont1">
+			<div id="cont1_list" class="cf">
+				<div class="list1">
+					<h3>에넥스딜</h3>
+					<ul class="sub_text cf">
+						<li style="top:0;">
+							<a href="#" class="data">봄맞이, 신상모음 DEAL</a>
+						</li>
+						<li>
+							<a href="#" class="data">화장대 스툴 초특가!!!</a>
+						</li>
+						<li>
+							<a href="#" class="data">현관입구부터 깔끔하게~</a>
+						</li>
+					</ul>
+					<a href="#" class="plus"><img src="img/icon_plus.png" alt="더보기"></a>
+				</div>
+
+
+				<div class="list2">
+					<h3>매거진</h3>
+					<ul class="sub_text1 cf">
+						<li style="bottom:0;">
+							<a href="#" class="data">화이트 다이닝 BEST 3</a>
+						</li>
+						<li>
+							<a href="#" class="data">당신의 숙면을 위한 탁월한 선택</a>
+						</li>
+						<li>
+							<a href="#" class="data">필수템!! 현관중문 필요한 이유</a>
+						</li>
+					</ul>
+					<a href="#" class="plus"><img src="img/icon_plus.png" alt="더보기"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 메뉴 -->
+		<div id="main_cont2">
+			<div id="cont2_wrap">
+				<div class="cont2">
+					<h2>EKI 퍼스트 <span>출시</span></h2>
+					<p>오윤아 PICK! 에넥스 최고의 가성비 주방</p>
+					<div class="cont2_btn">
+						<a href="#">보러가기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 이벤트 -->
+		<div id="main_cont3">
+			<div id="cont3_wrap">
+				<div class="cont3_tit">
+					<h2>ENEX <span>EVENT</span></h2>
+					<p></p>
+				</div>
+				<div class="cont3_list">
+					<ul>
+						<li class="cont3_list1">
+							<a href="#">
+								<img src="img/con3_1.jpg" width="208" height="208" alt="cake1">
+								<h3>21.03.01~21.03.31</h3>
+								<p>다이닝 7% 추가 할인</p>
+							</a>
+						</li>
+						<li class="cont3_list2">
+							<a href="#">
+								<img src="img/con3_2.jpg" width="208" height="208" alt="cake2">
+								<h3>21.03.01~21.03.31</h3>
+								<p>신학기 아이템 추가 5% 할인</p>
+							</a>
+						</li>
+						<li class="cont3_list3">
+							<a href="#">
+								<img src="img/con3_3.jpg" width="208" height="208" alt="cake3">
+								<h3>21.03.01~21.03.31</h3>
+								<p>에넥스 BEST소파 6종 할인</p>
+							</a>
+						</li>
+						<li class="cont3_list4">
+							<a href="#">
+								<img src="img/con3_4.jpg" width="208" height="208" alt="cake4">
+								<h3>21.03.17~21.03.31</h3>
+								<p>봄맞이 화장대 할인이 왔어요!</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 메뉴 -->
+
+		<div id="main_cont4">
+			<div id="cont4_wrap">
+				<div class="cont4">
+					<h2>에넥스와 함께 슬기로운 집콕생활!</h2>
+					<p>생방송으로 같이 준비해봐요.</p>
+					<div class="cont4_btn">
+						<a href="#">라이브방송 상품보기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- MD추천 -->
+		<div id="main_cont5">
+			<div id="cont5_wrap">
+				<div class="cont5_tit">
+					<h2>MD'S 추천</h2>
+					<p>공간은 더 아름답게, 생활은 더 편리하게</p>
+				</div>
+				<div class="cont5_sns">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/con5_1.jpg" alt="snsimg1" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/con5_2.jpg" alt="snsimg2" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/con5_3.jpg" alt="snsimg3" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+						<li class="padding_none">
+							<a href="#">
+								<img src="img/con5_4.jpg" alt="snsimg4" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/con5_5.jpg" alt="snsimg5" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/con5_6.jpg" alt="snsimg6" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/con5_7.jpg" alt="snsimg7" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+						<li class="padding_none">
+							<a href="#">
+								<img src="img/con5_8.jpg" alt="snsimg8" class="cont5_img1" width="290" height="290">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 매장찾기 -->
+		<div id="main_cont6">
+			<div id="cont6_wrap">
+				<div class="cont6_tit">
+					<h2>매장찾기</h2>
+					<p>가까운 에넥스 매장을 찾아보세요.</p>
+				</div>
+				<div class="store_search">
+					<form action="#">
+						<input type="text" placeholder="매장명 또는 주소">
+						<button class="search_btn">찾기</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer>
+		<div id="footer_wrap">
+			<ul class="bottom_nav">
+				<li><a href="#">회사소개</a></li>
+				<li class="color"><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">에넥스키친</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">채용정보</a></li>
+				<li><a href="#">제휴,입점문의</a></li>
+			</ul>
+			<div class="foot">
+				<div class="logo">
+					<img src="img/foot_logo.png" width="133" height="46" alt="f_logo">
+				</div>
+				<p class="copy_info">
+					<span>대표 : 박진규, 송성수</span>
+					<span>사업자등록번호 : 220-81-31765</span>
+					<span>서울시 서초구 서초대로 73길 40</span>
+					<span>대표번호 : 02-2185-2000</span>
+					<span class="foot_display">고객상담센터 : 02-2185-2000 / 1833-5008</span>
+				</p>
+				<p class="last_bottom">
+					COPYRIGHT &copy; 2020 enex.co.kr. ALL RIGHTS RESERVED.
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

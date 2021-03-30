@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Korail</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="js/stationData.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- 팝업창 -->
+    <div id="pop_favorites">
+        <div class="pop_favorites">
+            <div class="popfav_textbox">
+                <span>관심노선</span>
+                <p>설정한 관심노선이 없습니다. 마이코레일에서 관심노선을 설정할 수 있습니다.</p>
+                <a href="#none"><i class="fas fa-info-circle"></i> 관심노선이란?</a>
+                <a href="login.html">로그인</a>
+            </div>
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+        </div>  
+    </div>
+    <div id="pop_start">
+        <div class="pop_station">
+            <div class="pop_box cf">
+                <h3>역이름 조회</h3>
+                <ul class="stationIndexBtn">
+                    <li class="stationIndexOn">가</li>
+                    <li>나</li>
+                    <li>다</li>
+                    <li>라</li>
+                    <li>마</li>
+                    <li>바</li>
+                    <li>사</li>
+                    <li>아</li>
+                    <li>자</li>
+                    <li>차</li>
+                    <li>카</li>
+                    <li>타</li>
+                    <li>파</li>
+                    <li>하</li>
+                </ul>
+                <ul class="stationList">
+                    <li class="stationIndexOn">가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                </ul>
+            </div>
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+            <button type="button" class="Okclose">확인</button>
+        </div>  
+    </div>
+    <div id="pop_arrive">
+        <div class="pop_station">
+            <div class="pop_box cf">
+                <h3>역이름 조회</h3>
+                <ul class="stationIndexBtn cf">
+                    <li class="stationIndexOn">가</li>
+                    <li>나</li>
+                    <li>다</li>
+                    <li>라</li>
+                    <li>마</li>
+                    <li>바</li>
+                    <li>사</li>
+                    <li>아</li>
+                    <li>자</li>
+                    <li>차</li>
+                    <li>카</li>
+                    <li>타</li>
+                    <li>파</li>
+                    <li>하</li>
+                </ul>
+                <ul class="stationList cf">
+                    <li class="stationIndexOn">가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                    <li>가가역</li>
+                </ul>
+            </div>
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+            <button type="button" class="Okclose">확인</button>
+        </div>  
+    </div>
+    <div id="pop_calendar">
+        <div class="pop_calendar">
+            <div class="popcal_textbox">
+                <h3>열차 탑승일 선택</h3>                
+            </div>
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+            <button type="button" class="Okclose">확인</button>
+
+            <div id="datepicker"></div>
+        </div>  
+    </div>
+    <div id="pop_passenger">
+        <div class="pop_passenger">
+            <div class="poppas_box cf">
+                <h3>탑승객 선택</h3>
+                <div class="passenger">
+                    <h4>성인</h4>
+                    <span>(만 12세초과 ~ 만 65세미만)</span>
+                    <input type="text" value="0">
+                    <div class="minus_btn"><i class="fas fa-minus"></i></div>
+                    <div class="plus_btn"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="passenger">
+                    <h4>경로</h4>
+                    <span>(만 65세이상)</span>
+                    <input type="text" value="0">
+                    <div class="minus_btn"><i class="fas fa-minus"></i></div>
+                    <div class="plus_btn"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="passenger">
+                    <h4>어린이</h4>
+                    <span>(만 6세이상 ~ 만 12세이하)</span>
+                    <input type="text" value="0">
+                    <div class="minus_btn"><i class="fas fa-minus"></i></div>
+                    <div class="plus_btn"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="passenger">
+                    <h4>유아</h4>
+                    <span>(만 6세미만)</span>
+                    <input type="text" value="0">
+                    <div class="minus_btn"><i class="fas fa-minus"></i></div>
+                    <div class="plus_btn"><i class="fas fa-plus"></i></div>
+                </div>
+            </div>
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+            <button type="button" class="Okclose">확인</button>
+        </div>  
+    </div>
+    <div id="pop_disability">
+        <div class="pop_disability">
+            <div class="popdis_box">
+                <h3>장애정도</h3>
+                <div class="disability">
+                    <h4>중증</h4>                    
+                    <input type="text" value="0">
+                    <div class="minus_btn"><i class="fas fa-minus"></i></div>
+                    <div class="plus_btn"><i class="fas fa-plus"></i></div>
+                </div>
+                <div class="disability">
+                    <h4>경증</h4>                    
+                    <input type="text" value="0">
+                    <div class="minus_btn"><i class="fas fa-minus"></i></div>
+                    <div class="plus_btn"><i class="fas fa-plus"></i></div>
+                </div>
+            </div>
+            <button type="button" class="close"><i class="fas fa-times"></i></button>
+            <button type="button" class="Okclose">확인</button>
+        </div>  
+    </div>
+    <div id="header">
+        <div class="head_Top cf">
+            <ul class="cf">
+                <li><a href="#none">HOME <span>|</span></a></li>
+                <li><a href="#none">로그인 <span>|</span></a></li>
+                <li><a href="#none">코레일멤버십 <span>|</span></a></li>
+                <li><a href="#none">승차권제휴할인 <span>|</span></a></li>
+                <li><a href="#none">장바구니 <span>|</span></a></li>
+                <li><a href="#none">마이페이지 <span>|</span></a></li>
+                <li><a href="#none">고객센터 <span>|</span></a></li>
+                <li><a href="#none">사이트맵 <span>|</span></a></li>
+                <li><a href="#none">즐겨찾기 <span>|</span></a></li>
+                <li><a href="#none">
+                        <select name="language">
+                            <option value="" disabled selected hidden>LANGUAGE</option>
+                            <option value="korean">Korean</option>
+                            <option value="English">English</option>
+                            <option value="Chinese">Chinese</option>
+                        </select>
+                        <span>|</span>
+                    </a></li>
+                <li><a href="#none">코레일홈페이지</a></li>
+            </ul>
+        </div>
+        <div class="head_Logo">
+            <div class="logo_wrap cf">
+                <h1>
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                </h1>
+                <form class="cf">
+                    <input type="text" name="검색창" placeholder="검색어를 입력하세요.">
+                    <a href="#none"><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+        </div>
+        <div class="head_Nav">
+            <ul class="cf">
+                <li>
+                    <a href="sub1.html">승차권</a>
+                    <div class="nav_sub">
+                        <ul class="cf">
+                            <div class="cf sub_box sub_box1">
+                                <li>
+                                    <a href="#none">승차권예약</a>
+                                    <ul>
+                                        <li><a href="#none">일반승차권</a></li>
+                                        <li><a href="#none">할인승차권</a></li>
+                                        <li><a href="#none">4인 동반석</a></li>
+                                        <li><a href="#none">관광열차</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">발권/취소/변경</a>
+                                    <ul>
+                                        <li><a href="#none">발권/취소(반환)</a></li>
+                                        <li><a href="#none">예약변경</a></li>
+                                        <li><a href="#none">이용내역/영수증출력</a></li>
+                                        <li><a href="#none">과거이용내역신청/조회</a></li>
+                                        <li><a href="#none">도시락/제휴상품영수증</a></li>
+                                        <li><a href="#none">인터넷반환접수</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">정기승차권</a>
+                                    <ul>
+                                        <li><a href="#none">정기승차권 조회</a></li>
+                                        <li><a href="#none">정기승차권 발급</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">미등록고객서비스</a>
+                                    <ul>
+                                        <li><a href="#none">승차권예약</a></li>
+                                        <li><a href="#none">발권/취소(반환)</a></li>
+                                        <li><a href="#none">받은승차권 예약취소</a></li>
+                                        <li><a href="#none">승차권재발권</a></li>
+                                        <li><a href="#none">이용내역/영수증출력</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">이용안내</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="sub2.html">관광열차</a>
+                    <div class="nav_sub">
+                        <ul>
+                            <div class="cf sub_box sub_box2">
+                                <li>
+                                    <a href="#none">동해산타열차</a>
+                                </li>
+                                <li>
+                                    <a href="#none">서해금빛열차</a>
+                                </li>
+                                <li>
+                                    <a href="#none">백두대간협곡열차</a>
+                                </li>
+                                <li>
+                                    <a href="#none">남도해양열차</a>
+                                </li>
+                                <li>
+                                    <a href="#none">평화열차DMZ</a>
+                                </li>
+                                <li>
+                                    <a href="#none">정선아리랑열차</a>
+                                </li>
+                                <li>
+                                    <a href="#none">레일크루즈해랑</a>
+                                </li>
+                                <li>
+                                    <a href="#none">국악와인열차</a>
+                                </li>
+                                <li>
+                                    <a href="#none">바다열차</a>
+                                </li>
+                                <li>
+                                    <a href="#none">교육열차</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="sub3.html">자유여행</a>
+                    <div class="nav_sub">
+                        <ul>
+                            <div class="cf sub_box">
+                                <li>
+                                    <a href="#none">국내여행패스</a>
+                                    <ul>
+                                        <li><a href="#none">내일로 두번째 이야기</a></li>
+                                        <li><a href="#none">문화누리패스</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">해외여행패스</a>
+                                    <ul>
+                                        <li><a href="#none">일본패스</a></li>
+                                        <li><a href="#none">유럽패스</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">기차여행 만들기</a>
+                                </li>
+                                <li>
+                                    <a href="#none">호텔예약</a>
+                                </li>
+                                <li>
+                                    <a href="#none">렌터카예약</a>
+                                    <ul>
+                                        <li><a href="#none">롯데렌터카</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="sub4.html">여행상품</a>
+                    <div class="nav_sub">
+                        <ul>
+                            <div class="cf sub_box">
+                                <li>
+                                    <a href="#none">테마패키지</a>
+                                    <ul>
+                                        <li><a href="#none">우리지역 대표상품</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">KTX + 연계서비스</a>
+                                    <ul>
+                                        <li><a href="#none">레일텔</a></li>
+                                        <li><a href="#none">레일쉽-제주도(목포)</a></li>
+                                        <li><a href="#none">레일쉽-제주도(여수)</a></li>
+                                        <li><a href="#none">레일쉽-울릉도(포항)</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">국내패키지</a>
+                                    <ul>
+                                        <li><a href="#none">수도권</a></li>
+                                        <li><a href="#none">강원권</a></li>
+                                        <li><a href="#none">충청권</a></li>
+                                        <li><a href="#none">경상권</a></li>
+                                        <li><a href="#none">전라권</a></li>
+                                        <li><a href="#none">제주권</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">이달의 기차여행</a>
+                                </li>
+                                <li>
+                                    <a href="#none">여행상품 예약확인</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="sub5.html">종합이용안내</a>
+                    <div class="nav_sub">
+                        <ul>
+                            <div class="cf sub_box sub_box5">
+                                <li>
+                                    <a href="#none">할인 및 부가서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#none">승차권 이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="#none">교통약자 배려서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#none">전철이용안내/지연증명</a>
+                                </li>
+                                <li>
+                                    <a href="#none">유실물</a>
+                                </li>
+                                <li>
+                                    <a href="#none">고객의소리 접수/ 조회</a>
+                                </li>
+                                <li>
+                                    <a href="#none">철도고객센터</a>
+                                </li>
+                                <li>
+                                    <a href="#none">광고안내</a>
+                                </li>
+                                <li>
+                                    <a href="#none">승차권 제휴할인 안내</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="sub6.html">기차역정보/노선도</a>
+                    <div class="nav_sub">
+                        <ul>
+                            <div class="cf sub_box sub_box6">
+                                <li>
+                                    <a href="#none">기차역 안내</a>
+                                    <ul>
+                                        <li><a href="#none">KTX역</a></li>
+                                        <li><a href="#none">일반철도</a></li>
+                                        <li><a href="#none">광역철도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#none">철도 노선안내</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+
+        <div class="content1 cf">
+
+            <div class="cont1_L">
+
+                <!-- 간편예매 -->
+                <div class="cont1_L_1">
+                    <h2>승차권간편예매</h2>
+                    <div class="tab1">
+                        <input type="radio" id="tab1_1" name="tab1" checked>
+                        <input type="radio" id="tab1_2" name="tab1">
+                        <input type="radio" id="tab1_3" name="tab1">
+                        <input type="radio" id="tab1_4" name="tab1">
+                        <input type="radio" id="tab1_5" name="tab1">
+                        <section class="buttons cf">
+                            <label for="tab1_1">KTX/SRT</label>
+                            <label for="tab1_2">ITX-청춘</label>
+                            <label for="tab1_3">새마을호/ITX-새마을</label>
+                            <label for="tab1_4">무궁화호/누리로</label>
+                            <label for="tab1_5">통근열차</label>
+                        </section>
+                    </div>
+
+                    <div class="cont1_L_box1 cf">
+                        <div class="star_btn">
+                            <a href="#none" class="cont1_open"><i class="fas fa-star"></i></a>
+                        </div>
+
+                        <div class="tab2">
+                            <input type="radio" id="tab2_1" name="tab2" checked>
+                            <input type="radio" id="tab2_2" name="tab2">
+                            <section class="buttons cf">
+                                <label for="tab2_1">왕복</label>
+                                <label for="tab2_2">편도</label>
+                            </section>
+                        </div>
+                        <div class="tab3">
+                            <input type="radio" id="tab3_1" name="tab3" checked>
+                            <input type="radio" id="tab3_2" name="tab3">
+                            <section class="buttons cf">
+                                <label for="tab3_1">직통</label>
+                                <label for="tab3_2">환승</label>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="cont1_L_box2 cf">
+                        <div class="start">
+                            <a href="#none" class="start_open"><span>출발지</span></a>
+                        </div>
+                        <div class="arrive">
+                            <a href="#none" class="arrive_open"><span>도착지</span></a>
+                        </div>
+                        <div class="calendar">
+                            <a href="#none" class="calendar_open"><span>탑승일</span></a>
+                        </div>
+                        <div class="passenger">
+                            <a href="#none" class="passenger_open"><span>탑승객</span></a>
+                        </div>
+                        <div class="disability">
+                            <a href="#none" class="disability_open"><span>장애정도</span></a>
+                        </div>
+                        <button type="button">조회</button>
+                    </div>
+                </div>
+                <!-- 예매서비스 -->
+                <div class="cont1_L_2 cf">
+                    <div class="cont1_L_2_btn">예매서비스</div>
+                    <ul class="cf">
+                        <li class="location">
+                            <a href="#">
+                                <div class="front"><img src="img/tab1.jpg" alt="예매서비스"></div>
+                                <div class="back"><img src="img/tab1_on.jpg" alt="예매서비스"></div>
+                            </a>
+                        </li>
+                        <li class="location">
+                            <a href="#">
+                                <div class="front"><img src="img/tab2.jpg" alt="예매서비스"></div>
+                                <div class="back"><img src="img/tab2_on.jpg" alt="예매서비스"></div>
+                            </a>
+                        </li>
+                        <li class="location">
+                            <a href="#">
+                                <div class="front"><img src="img/tab3.jpg" alt="예매서비스"></div>
+                                <div class="back"><img src="img/tab3_on.jpg" alt="예매서비스"></div>
+                            </a>
+                        </li>
+                        <li class="location">
+                            <a href="#">
+                                <div class="front"><img src="img/tab4.jpg" alt="예매서비스"></div>
+                                <div class="back"><img src="img/tab4_on.jpg" alt="예매서비스"></div>
+                            </a>
+                        </li>
+                        <li class="location">
+                            <a href="#">
+                                <div class="front"><img src="img/tab5.jpg" alt="예매서비스"></div>
+                                <div class="back"><img src="img/tab5_on.jpg" alt="예매서비스"></div>
+                            </a>
+                        </li>
+                        <li class="location">
+                            <a href="#">
+                                <div class="front"><img src="img/tab6.jpg" alt="예매서비스"></div>
+                                <div class="back"><img src="img/tab6_on.jpg" alt="예매서비스"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cont1_R cf">
+
+                <!-- 광고1 -->
+                <div class="cont1_R_1">
+                    <ul>
+                        <li class="bn1" style="left:0">
+                            <a href="#"><img src="img/ad1_bn1.png" alt="배너1"></a>
+                        </li>
+                        <li class="bn2">
+                            <a href="#"><img src="img/ad1_bn2.jpg" alt="배너1"></a>
+                        </li>
+                        <li class="bn3">
+                            <a href="#"><img src="img/ad1_bn3.jpg" alt="배너1"></a>
+                        </li>
+                        <li class="bn4">
+                            <a href="#"><img src="img/ad1_bn4.jpg" alt="배너1"></a>
+                        </li>
+                    </ul>
+                    <div class="arrowbox">
+                        <a href="#" class="prev"><i class="fas fa-angle-left"></i></a>
+                        <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <div class="number">
+                        <p class="bl">1/4</p>
+                        <p>2/4</p>
+                        <p>3/4</p>
+                        <p>4/4</p>
+                    </div>
+                </div>
+                <!-- 광고2 -->
+                <div class="cont1_R_2">
+                    <ul>
+                        <li>
+                            <a href="#none"><img src="img/ad2_bn3.jpg" alt="배너2"></a>
+                        </li>
+                        <li>
+                            <a href="#none"><img src="img/ad2_bn4.jpg" alt="배너2"></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 탭 -->
+        <div class="content2 cf">
+            <!-- 탭제목 -->
+            <div class="tab">
+                <ul class="cf">
+                    <li class="tab-btn on"><a href="#none" tabindex="1">공지사항</a></li>
+                    <li class="tab-btn"><a href="#none" tabindex="1">KTX- 할인상품</a></li>
+                    <li class="tab-btn"><a href="#none" tabindex="1">한국철도 SNS</a></li>
+                </ul>
+            </div>
+
+            <!-- 탭내용 -->
+            <div class="cont2 cont2_1 cf on">
+                <a href="#none" class="cf"><img src="img/btn_more.png" alt="더보기"></a>
+                <div class="cont2_1_L">
+                    <ul class="title">
+                        <li class="cf">
+                            <div class="notice_num">번호</div>
+                            <div class="notice_title">제목</div>
+                            <div class="notice_date">등록일</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1169</div>
+                                <div class="notice_title">고속철도 운행노선 집중보수작업에 따른 열차서행 안내</div>
+                                <div class="notice_date">2021-03-16</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1168</div>
+                                <div class="notice_title">서비스 아이디어 제안 톡톡 당첨자 안내</div>
+                                <div class="notice_date">2021-03-16</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1167</div>
+                                <div class="notice_title">광역철도 운행시각 일부 조정 알림</div>
+                                <div class="notice_date">2021-02-22</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1166</div>
+                                <div class="notice_title">자유석 운영열차 조정알림</div>
+                                <div class="notice_date">2021-02-14</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1165</div>
+                                <div class="notice_title">승차권 발매제한 조정안내</div>
+                                <div class="notice_date">2021-02-14</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont2_1_R">
+                    <ul class="title">
+                        <li class="cf">
+                            <div class="notice_num">번호</div>
+                            <div class="notice_title">제목</div>
+                            <div class="notice_date">등록일</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1169</div>
+                                <div class="notice_title">고속철도 운행노선 집중보수작업에 따른 열차서행 안내</div>
+                                <div class="notice_date">2021-03-16</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1168</div>
+                                <div class="notice_title">서비스 아이디어 제안 톡톡 당첨자 안내</div>
+                                <div class="notice_date">2021-03-16</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1167</div>
+                                <div class="notice_title">광역철도 운행시각 일부 조정 알림</div>
+                                <div class="notice_date">2021-02-22</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1166</div>
+                                <div class="notice_title">자유석 운영열차 조정알림</div>
+                                <div class="notice_date">2021-02-14</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none" class="cf">
+                                <div class="notice_num">1165</div>
+                                <div class="notice_title">승차권 발매제한 조정안내</div>
+                                <div class="notice_date">2021-02-14</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cont2 cont2_2 cf">
+                <div class="cont2_2_disC cf">
+                    <a href="#none" class="cf"><img src="img/disC1.jpg" alt="할인혜택"></a>
+                    <div class="disC_Textbox">
+                        <br><br>
+                        <p>이 상품은 만 25세부터 만 33세 이하의 회원이 이용할 수 있는 상품입니다.</p>
+                        <p>"www.letskorail.com > 마이페이지 > 회원정보관리 > 나의정보수정"에서 이용 방법에 대하여 동의한 후 이용할 수 있습니다.</p>
+                        <span>이 상품의 이용방법에 미리 동의하신 경우 아래 '예매 바로가기'를 선택하시고, 아직 동의하지 않은 경우에는 '동의하러 가기'를 선택하시기 바랍니다.</span>
+                        <br>
+                        <a href="#none">"힘내라청춘" 동의하러 가기</a>
+                        <a href="#none">"힘내라청춘" 예매 바로가기</a>
+                    </div>
+                </div>
+                <div class="cont2_2_disC cf">
+                    <a href="#none" class="cf"><img src="img/disC2.jpg" alt="할인혜택"></a>
+                    <div class="disC_Textbox">
+                        <br><br>
+                        <p>청소년 드림 할인상품은 만24세이하의 청소년에 한하여 사용이 가능한 상품입니다.</p>
+                        <p>청소년인 고객은 "www.letskorail.com > 마이페이지 > 회원정보관리 > 나의정보수정" 에서 청소년 회원 동의 후 예약을 진행하시기 바랍니다.</p>
+                        <span>기존에 청소년 동의를 완료하신 경우 별도의 추가 요청사항 없이 해당상품 이용이 가능하오니 참고하시기 바랍니다.</span> <br>
+                        <a href="#none">"청소년드림" 동의하러 가기</a>
+                        <a href="#none">"청소년드림" 예매 바로가기</a>
+                    </div>
+                </div>
+                <div class="cont2_2_disC cf">
+                    <a href="#none" class="cf"><img src="img/disC3.jpg" alt="할인혜택"></a>
+                    <div class="disC_Textbox">
+                        <p>이 상품은 임신부인 회원에 한하여 사용이 가능한 상품입니다.</p>
+                        <p>이 상품을 이용하고자 하는 고객은 증빙자료(신분증, 임신확인서 또는 진단서)를 지참하고 가까운 역을 방문하셔서 '상품 구입 인증'을 받으셔야 합니다.</p>
+                        <p>홈페이지에서 증빙자료를 등록하신 경우는 역 창구를 방문하시지 않고, 인증 절차를 거친 후 상품을 이용하실 수 있습니다.</p>
+                        <p>www.letskorail.com > 마이페이지 > 회원정보관리에서 등록할 수 있으며, 영업일 기준 약 2~3일 정도 소요됩니다.</p>
+                        <span>인증을 받으신 고객께서는 아래 '예매 바로가기'를 클릭하시기 바랍니다.</span> <br>
+                        <a href="#none">"맘편한 임신부" 동의하러 가기</a>
+                        <a href="#none">"맘편한 임신부" 예매 바로가기</a>
+                    </div>
+                </div>
+                <div class="cont2_2_disC cf">
+                    <a href="#none" class="cf"><img src="img/disC4.jpg" alt="할인혜택"></a>
+                    <div class="disC_Textbox">
+                        <p> 이 상품은 다자녀 가정인 회원에 한하여 사용이 가능한 상품입니다.</p>
+                        <p>이 상품을 이용하고자 하는 고객은 아래의 방법으로 다자녀 행복 가족등록을 하여 주시기 바랍니다.</p>
+                        <p> *〔가족정보 등록하기〕에서 가족 구성원을 등록하고 가까운 역 창구에서 가족관계증명서 등을 제시하고 등록된 내용을 확인받은 후 이용 가능 <br>
+                            * 홈페이지에서 증빙자료를 등록한 경우는 역 창구를 방문하지 않고, 인증 절차를 거친 후 이용 가능</p>
+                        <p>www.letskorail.com > 마이페이지 > 회원정보관리에서 등록할 수 있으며, 영업일 기준 약 2~3일 정도 소요됩니다.</p>
+                        <a href="#none">"다자녀행복" 동의하러 가기</a>
+                        <a href="#none">"다자녀행복" 예매 바로가기</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cont2 cont2_3 cf">
+                <a href="#none"><img src="img/btn_more.png" alt="더보기"></a>
+                <ul class="cf">
+                    <li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/baSxJdFRJpo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jv63J5MGyKk" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yqhlXGVYcxk" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="img/sns1.jpg" alt="인스타그램">
+                            <div class="cont2_3_textbox">
+                                <p>instagram</p>
+                                <p>손현주의 힐링행 특급열차 개통!</p>
+                                <p>손현주의 간이역 매주 토요일 밤 9시 50분 MBC에서 방송</p>
+                                <span>보러가기</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="img/sns2.jpg" alt="인스타그램">
+                            <div class="cont2_3_textbox">
+                                <p>instagram</p>
+                                <p>기분 좋은 날씨~</p>
+                                <p>따스한 햇살 받으며 기차여행 어떠세요?</p>
+                                <span>보러가기</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="content3 cf">
+            <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <a href="#none"><img src="img/main_bn1.jpg" alt=""></a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#none"><img src="img/main_bn2.jpg" alt=""></a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#none"><img src="img/ad2_bn3.jpg" alt=""></a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#none"><img src="img/ad2_bn4.jpg" alt=""></a>
+                  </div>
+                </div>
+            
+                <div class="swiper-pagination swiper-pagination1"></div>
+            
+                <div class="swiper-button-next next1"></div>
+                <div class="swiper-button-prev prev1"></div>
+            
+              </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer1">
+            <ul class="cf">
+                <li><img src="img/award1.png" alt="하단배너"></li>
+                <li><img src="img/award2.png" alt="하단배너"></li>
+                <li><img src="img/award3.png" alt="하단배너"></li>
+                <li><img src="img/award4.png" alt="하단배너"></li>
+                <li><img src="img/award5.png" alt="하단배너"></li>
+                <li><img src="img/award6.png" alt="하단배너"></li>
+                <li><img src="img/award7.png" alt="하단배너"></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <ul class="cf">
+                <li><a href="#none">고객서비스현장</a></li>
+                <li><a href="#none">보도자료</a></li>
+                <li><a href="#none">홈페이지이용약관</a></li>
+                <li><a href="#none">여객운송약관/부속약관</a></li>
+                <li><a href="#none">정보공개</a></li>
+                <li><a href="#none">개인정보처리방침</a></li>
+                <li><a href="#none">이메일무단수집거부</a></li>
+                <li><a href="#none">광고안내</a></li>
+                <li><a href="#none">저작권정책</a></li>
+                <li><a href="#none">러브포인트</a></li>
+                <li><a href="#none">이벤트</a></li>
+            </ul>
+            <div class="footer_text">
+                <ul class="cf">
+                    <li>대표자 : 손병석</li>
+                    <li>상호 : 한국철도공사</li>
+                    <li>사업자등록 : 314-82-10024</li>
+                    <li>통신판매업신고 : 대전동구-0233호</li>
+                    <li>주소 : (34618) 대전광역시 동구 중앙로 240</li>
+                    <li>TEL : 1544-7788</li>
+                    <li>FAX : 02-361-8385</li>
+                </ul>
+                <p>Copyright &copy; 2021 By KOREA RAILROAD All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

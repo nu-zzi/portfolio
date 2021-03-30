@@ -1,0 +1,291 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "맑은 고딕";
+}
+
+.cf::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+#header {
+    width: 1200px;
+    height: 100px;
+    position: relative;
+    margin-top: 30px;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 40px;
+    width: 235px;
+}
+
+.logo-wrapper img {
+    width: 100%;
+}
+
+.language-wrapper {
+    position: absolute;
+    right: -10px;
+}
+
+.language-wrapper a {
+    font-size: 13px;
+    padding: 5px 15px 5px 0px;
+    font-weight: 500;
+    color: #240B06;
+}
+
+.language-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.language-wrapper i {
+    font-size: 15px;
+    color: #240B06;
+    padding: 5px;
+}
+
+.language-wrapper i:hover {
+    color: #6b2704;
+}
+
+.language-wrapper select {
+    width: 90px;
+    height: 20px;
+    border: none;
+    background: url(../images/bg_select_arrow1.png) no-repeat 100% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+nav {
+    position: relative;
+    top: 55px;
+    float: right;
+}
+
+/* z인덱스는 두개다 포지션 설정되어잇거나 둘다 없거나 해야 가능, 
+같은 형제일때나 부모사이일떄도 가능 */
+
+nav ul {
+    position: relative;
+    z-index: 100;
+}
+
+nav ul li {
+    float: left;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 800;
+    margin-left: 2px;
+    width: 160px;
+}
+
+nav ul li:first-of-type {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #240B06;
+}
+
+nav ul li a:hover {
+    color: #7C210F;
+}
+
+nav .sub {
+    margin-top: 35px;
+    transition: all 0.3s;
+    height: 0;
+    overflow: hidden;
+}
+
+nav .sub ul li {
+    font-size: 15px;
+    float: none;
+    font-weight: 500;
+    margin: 0;
+    padding: 7px 0;
+    min-width: 85px;
+}
+
+nav .sub a {
+    color: #EDBDA6;
+}
+
+nav .sub li:hover a {
+    color: #FAE4D9;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+nav a.active {
+    color: #7C210F;
+}
+
+.sub_background {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: #624130;
+    z-index: 10;
+    top: 56px;
+    transition: all 0.3s;
+}
+
+nav:hover .sub {
+    height: 200px;
+    position: absolute;
+}
+
+nav:hover .sub_background {
+    height: 220px;
+    position: absolute;
+    top: 56px;
+}
+
+#main_banner {
+    min-width: 1200px;
+    width: 100%;
+    height: 579px;
+    margin-top: 10px;
+    margin-bottom: 110px;
+    object-fit: cover;
+}
+
+.maintext {
+    width: 1200px;
+    margin: 0 auto;
+    float: left;
+    margin-top: -195px;
+}
+
+h1 {
+    font-size: 3.7em;
+    color: #fff;
+    text-shadow: 1px 1px 3px #555;
+}
+
+#history {
+    float: right;
+}
+
+#history li {
+    float: left;
+    margin: 0 5px;
+}
+
+#history i {
+    color: black;
+}
+
+#history i:hover {
+    color: #6b2704;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 90px;
+}
+
+#footer {
+    min-width: 1200px;
+    width: 100%;
+    height: 170px;
+    background-color: #765747;
+    background-size: cover;
+    float: left;
+    margin-top: 150px;
+}
+
+.footer_box {
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer_text1 a {
+    color: #b3b3b3;
+    padding: 0 5px;
+}
+
+.footer_text1 a:last-of-type {
+    border: none;
+}
+
+.footer_text1 a:hover {
+    color: #333;
+}
+
+.footer_text2 {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.footer_icon {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.footer_icon li{
+    float: right;
+    display: block;
+    padding-right: 15px;
+}
+
+.footer_icon li:first-of-type {
+    padding: 0;
+}
+
+.footer_icon li a {
+    font-size: 25px;
+    color: #dea78c;
+}
+
+.footer_icon li a:hover {
+    color: #6b2704;
+}

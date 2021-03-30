@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+#main_banner {
+    background: url(../sub_img/sub_bn5.jpg) no-repeat center center;
+}
+
+#eventbox {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#eventbox .eventbox {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 5px solid rgb(250, 206, 206);
+    padding: 10px 30px;
+}
+
+#eventbox .eventbox img {
+    width: 30%;
+    height: 200px;
+    object-fit: contain;
+    float: left;
+}
+
+#eventbox .eventbox .eventtext {
+    width: 65%;
+    float: right;
+    margin-top: 40px;
+}
+
+#eventbox .eventbox .eventtext a p:first-of-type {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#eventbox .eventbox .eventtext p {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#eventbox .eventbox .eventtext a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.eventend {
+    position: relative;
+    z-index: 1;
+}
+
+.eventend_text {
+    position: absolute;
+    width: 231px;
+    height: 200px;
+    background: rgba(214, 214, 214, 0.8);
+    z-index: 100;
+
+}
+
+.eventend_text p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 88px 19px;
+    color: rgb(117, 117, 117);
+}

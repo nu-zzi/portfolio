@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+#main_banner {
+    background: url(../sub_img/sub_bn4.jpg) no-repeat center center;
+}
+
+#newsbox {
+    width: 100%;
+}
+
+#newsbox span {
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+#newsbox span:hover {
+    text-decoration: underline;
+}
+
+#newsbox .newsbox {
+
+    margin-top: 80px;
+    width: 100%;
+}
+
+#newsbox .newsbox ul {
+    clear: both;
+    width: 100%;
+}
+
+#newsbox .newsbox li {
+    width: calc(100% / 4 - 9px);
+    float: left;
+    margin: 0 3px;
+}
+
+#newsbox .newsbox li a img {
+    width: 100%;
+    height: 212px;
+    object-fit: cover;
+}
+
+#newsbox .newsbox:last-of-type li a img {
+    object-fit: contain;
+}
+
+#newsbox .newsbox li p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #777;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#newsbox .newsbox li p:first-of-type {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #444;
+}
+
+#newsbox .newsbox li p:hover {
+    text-decoration: underline;
+}

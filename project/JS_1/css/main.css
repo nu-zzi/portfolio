@@ -1,0 +1,930 @@
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#container .content1 {
+    width: 100%;
+}
+
+.content1 .cont1_L {
+    float: left;
+    width: 75%;
+}
+
+.content1 .cont1_L .cont1_L_1 {
+    width: 100%;
+}
+
+.content1 .cont1_L .cont1_L_1 h2 {
+    color: #fff;
+    background: rgb(42, 65, 126);
+    width: 173px;
+    padding: 13px 20px;
+    font-size: 18px;
+}
+
+.tab1 input,
+.tab2 input,
+.tab3 input {
+    display: none;
+}
+
+.tab1 input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1),
+.tab1 input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2),
+.tab1 input:nth-of-type(3):checked~section.buttons>label:nth-of-type(3),
+.tab1 input:nth-of-type(4):checked~section.buttons>label:nth-of-type(4),
+.tab1 input:nth-of-type(5):checked~section.buttons>label:nth-of-type(5) {
+    color: rgb(35, 115, 180);
+    font-weight: 600;
+}
+
+.tab2 input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1) {
+    background: rgb(35, 115, 180);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px 0 0 5px;
+}
+
+.tab2 input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2) {
+    background: rgb(35, 115, 180);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+}
+
+.tab3 input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1) {
+    background: rgb(35, 115, 180);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px 0 0 5px;
+}
+
+.tab3 input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2) {
+    background: rgb(35, 115, 180);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+}
+
+.tab1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.tab1 label {
+    cursor: pointer;
+    padding: 13px 28px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.tab1 label:first-of-type {
+    width: 130px;
+}
+
+.tab1 label:nth-of-type(2) {
+    width: 130px;
+}
+
+.tab1 label:nth-of-type(3) {
+    width: 227px;
+}
+
+.tab1 label:nth-of-type(4) {
+    width: 193px;
+}
+
+.tab1 label:last-of-type {
+    width: 132px;
+}
+
+.cont1_L_box1 label {
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+
+.cont1_L_box1 {
+    margin-top: 60px;
+}
+
+.cont1_L_box1 .star_btn,
+.cont1_L_box1 .tab2,
+.cont1_L_box1 .tab3 {
+    float: left;
+}
+
+.cont1_L_box1 .star_btn {
+    margin-right: 30px;
+    width: 58px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid rgb(181, 209, 231);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cont1_L_box1 .star_btn a {
+    color: rgb(35, 115, 180);
+    font-size: 15px;
+    display: block;
+    margin-top: 12px;
+}
+
+.cont1_L_box1 .star_btn:hover a {
+    font-size: 17px;
+}
+
+/* 즐겨찾기 팝업창 */
+
+#pop_favorites {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    display: none;
+}
+
+.pop_favorites {
+    position: relative;
+    top: calc(50% - 100px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 200px;
+    background: #ffffff;
+    padding: 30px;
+}
+
+.pop_favorites .popfav_textbox {
+    margin-top: 12px;
+}
+
+.pop_favorites span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.pop_favorites p {
+    font-size: 15px;
+    letter-spacing: -1px;
+    display: block;
+    margin-bottom: 35px;
+}
+
+.pop_favorites a {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 10px;
+    background: rgb(42, 65, 126);
+    margin-right: 3px;
+    border-radius: 4px;
+}
+
+.pop_favorites a:hover {
+    background: rgb(35, 115, 180);
+}
+
+.close {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    font-size: 30px;
+    color: rgb(42, 65, 126);
+    background: #fff;
+    cursor: pointer;
+}
+
+.Okclose {
+    position: absolute;
+    bottom: 14px;
+    right: calc(50% - 30px);
+    font-size: 15px;
+    color: #fff;
+    background: rgb(42, 65, 126);
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.Okclose:hover {
+    background: rgb(35, 115, 180);
+}
+
+.tab2,
+.tab3 {
+    margin-right: 10px;
+}
+
+.cont1_L_box1 .buttons label:first-of-type:hover {
+    background: rgb(181, 209, 231);
+    border-radius: 5px 0 0 5px;
+}
+
+.cont1_L_box1 .buttons label:last-of-type:hover {
+    background: rgb(181, 209, 231);
+    border-radius: 0 5px 5px 0;
+}
+
+.cont1_L_box1 .buttons label:first-of-type {
+    border: 1px solid rgb(35, 115, 180);
+    border-radius: 5px 0 0 5px;
+}
+
+.cont1_L_box1 .buttons label:last-of-type {
+    border: 1px solid rgb(35, 115, 180);
+    border-radius: 0 5px 5px 0;
+}
+
+
+.tab2 section label,
+.tab3 section label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    padding: 13px 15px;
+}
+
+.cont1_L_box2 {
+    margin-top: 55px;
+}
+
+.cont1_L_box2 div {
+    float: left;
+    margin-right: 20px;
+    width: 130px;
+    border-bottom: 2px solid #999;
+    padding: 22px 0;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 출발지 팝업창 */
+
+h3 {
+    font-size: 25px;
+}
+
+#pop_start, #pop_arrive {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    display: none;
+}
+
+.pop_station {
+    position: relative;
+    top: calc(50% - 225px);
+    left: calc(50% - 350px);
+    width: 700px;
+    height: 350px;
+    background: #ffffff;
+    padding: 30px;
+}
+
+.pop_station .pop_box {
+    margin-top: 10px;
+}
+
+.pop_station .pop_box h3 {
+    margin-bottom: 30px;
+}
+
+.stationIndexBtn {
+    float: left;
+    width: calc(45% - 10px);
+    margin-right: 20px;
+}
+
+.stationIndexBtn li {
+    float: left;
+    width: calc(100% / 5 - 2px);
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.stationList {
+    float: right;
+    width: calc(50% - 10px);
+    height: 175px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.stationList::-webkit-scrollbar {
+    display: none;
+}
+
+.stationList li {
+    float: left;
+    width: calc(100% / 4 - 2px);
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 1px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.pop_station li:hover {
+    background: rgb(240 243 247);
+    font-weight: 600;
+    border-color: #333;
+}
+
+.stationIndexOn {
+    border: 1px solid #333;
+    background: #dedede;
+}
+
+.cont1_L_box2 button {
+    color: #fff;
+    background: rgb(35, 115, 180);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cont1_L_box2 button:hover {
+    background: rgb(42, 65, 126);
+}
+
+
+/* 탑승일 팝업창 */
+#pop_calendar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    display: none;
+}
+
+.pop_calendar {
+    position: relative;
+    top: calc(50% - 195px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 390px;
+    background: #ffffff;
+    padding: 30px 30px 30px 60px;
+}
+
+.popcal_textbox {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* 탑승객 팝업창 */
+
+#pop_passenger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    display: none;
+}
+
+.pop_passenger {
+    position: relative;
+    top: calc(50% - 170px);
+    left: calc(50% - 350px);
+    width: 700px;
+    height: 340px;
+    background: #ffffff;
+    padding: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.poppas_box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.poppas_box span {
+    font-size: 22px;
+    font-weight: 800;
+    width: 100%;
+    float: left;
+}
+
+.poppas_box div {
+    float: left;
+    width: calc(100% / 4 - 10px);
+    margin-right: 10px;
+}
+
+.poppas_box div:last-of-type {
+    margin-right: 0;
+}
+
+.poppas_box h3 {
+    margin-bottom: 35px;
+}
+
+.poppas_box .passenger span{
+    font-size: 13px;
+    color: #888;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.poppas_box .passenger input {
+    width: 100%;
+    padding: 13px 10px;
+    background-color: rgb(243, 242, 239);
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.poppas_box .passenger i {
+    font-size: 22px;
+    color: #999;
+    background: none;  
+    cursor: pointer;  
+}
+
+.poppas_box .passenger .minus_btn i {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+}
+
+.poppas_box .passenger .plus_btn i {
+    position: relative;
+    bottom: 30px;
+    left: 85px;
+}
+
+/* 장애정도 팝업창 */
+#pop_disability {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999999;
+    display: none;
+}
+
+.pop_disability {
+    position: relative;
+    top: calc(50% - 170px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 340px;
+    background: #ffffff;
+    padding: 30px;
+}
+.popdis_box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.popdis_box div {
+    float: left;
+    width: calc(100% / 2 - 10px);
+    margin-right: 10px;
+}
+
+.popdis_box div:last-of-type {
+    margin-right: 0;
+}
+
+.popdis_box h3 {
+    margin-bottom: 35px;
+}
+
+.popdis_box .disability input {
+    width: 100%;
+    padding: 13px 10px;
+    background-color: rgb(243, 242, 239);
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.popdis_box .disability i {
+    font-size: 22px;
+    color: #999;
+    background: none;  
+    cursor: pointer;  
+}
+
+.popdis_box .disability .minus_btn i {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+}
+
+.popdis_box .disability .plus_btn i {
+    position: relative;
+    bottom: 30px;
+    left: 75px;
+}
+
+/* 예매서비스 */
+
+.cont1_L_2 {
+    margin-top: 65px;
+    width: 100%;
+}
+
+.cont1_L_2 .cont1_L_2_btn {
+    float: left;
+    width: 118px;
+    height: 63px;
+    background: rgb(42, 65, 126);
+    color: #fff;
+    text-align: center;
+    padding-top: 23px;
+    margin-right: 10px;
+}
+
+.cont1_L_2 ul li {
+    float: left;
+}
+
+.location {
+    position: relative;
+    width: 118px;
+    height: 63px;
+}
+
+.location .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 118px;
+    height: 63px;
+}
+
+.location .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 118px;
+    height: 63px;
+}
+
+/* cont1 오른쪽1 */
+
+.cont1_R {
+    width: 25%;
+    float: right;
+}
+
+.cont1_R .cont1_R_1 {
+    width: 230px;
+    height: 205px;
+    position: relative;
+    overflow: hidden;
+    float: right;
+}
+
+.cont1_R_1 li {
+    width: 230px;
+    height: 205px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.cont1_R_1 li a {
+    width: 100%;
+    height: 100%;
+}
+
+.cont1_R_1 li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.arrowbox {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.arrowbox a i {
+    font-size: 22px;
+    color: #777;
+    padding-right: 5px;
+}
+
+.arrowbox a i:hover {
+    color: #111;
+}
+
+.number {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: 5;
+}
+
+.number p {
+    display: none;
+    font-size: 15px;
+}
+
+.number p.bl {
+    display: block;
+}
+
+
+/* cont1 오른쪽2 */
+
+.cont1_R_2 {
+    width: 77%;
+    margin-top: 15px;
+    float: right;
+}
+
+.cont1_R_2 img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+
+
+.content2 {
+    margin-top: 70px;
+    width: 100%;
+}
+
+/* cont2 탭메뉴*/
+
+.content2 .tab ul li {
+    float: left;
+    padding: 10px 30px;
+    background: #fff;
+}
+
+.content2 .tab ul li a {
+    color: rgb(42, 65, 126);
+}
+
+.tab ul li.on {
+    background: rgb(42, 65, 126);
+}
+
+.tab ul li.on a {
+    color: #fff;
+}
+
+.content2 {
+    border: 1px solid #999;
+}
+
+/* 탭메뉴1 */
+.cont2_1 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cont2_1 img {
+    float: right;
+    margin-right: 30px;
+}
+
+.cont2_1_L {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+.cont2_1 .title li div {
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cont2_1 .title div {
+    font-size: 16px;
+    color: #555;
+}
+
+.cont2_1 .notice_num {
+    margin-right: 30px;
+    width: 55px;
+    text-align: center;
+}
+
+.cont2_1 .notice_title {
+    margin-right: 30px;
+    width: 370px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cont2_1 .notice_date {
+    width: 85px;
+}
+
+.cont2_1 ul li div {
+    float: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #777;
+}
+
+.cont2_1 ul:nth-of-type(2) li:hover div {
+    color: #000;
+}
+
+.cont2_1_R {
+    width: 50%;
+    float: right;
+    padding: 5px;
+}
+
+/* 탭메뉴2 */
+
+.cont2_2 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cont2_2 img {
+    padding-top: 30px;
+    margin-right: 10px;
+}
+
+.cont2_2 .cont2_2_disC {
+    float: left;
+    width: 135px;
+    height: 235px;
+    overflow: hidden;
+}
+
+.cont2_2 .cont2_2_disC>a {
+    float: left;
+}
+
+.cont2_2 .disC_Textbox {
+    float: right;
+    width: 80%;
+    padding: 20px 20px 0 10px;
+}
+
+.cont2_2 .disC_Textbox p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+    letter-spacing: -0.7px;
+}
+
+.cont2_2 .disC_Textbox span {
+    font-size: 14px;
+    color: rgb(252, 129, 129);
+}
+
+.cont2_2 .disC_Textbox a {
+    padding: 8px 10px;
+    background: rgb(42, 65, 126);
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.cont2_2 .disC_Textbox a:hover {
+    background: rgb(35, 115, 180);
+}
+
+
+/* 탭메뉴 3 */
+
+.cont2_3 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cont2_3>a {
+    float: right;
+    margin-right: 30px;
+}
+
+.cont2_3 ul {
+    clear: both;
+}
+
+.cont2_3 ul li {
+    float: left;
+    width: calc(100% / 5 - 5px);
+    height: 235px;
+    margin-right: 5px;
+}
+
+.cont2_3 ul li iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cont2_3 ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont2_3 ul li a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.cont2_3_textbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(90, 90, 90, 0.6);
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.cont2_3_textbox p {
+    margin-bottom: 10px;
+}
+
+.cont2_3_textbox span {
+    padding: 10px 15px;
+    border: 1px solid rgb(42, 65, 126);
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 28%;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+.cont2_3_textbox span:hover {
+    background: rgb(42, 65, 126);
+    color: #fff;
+}
+
+.cont2_3 li:hover .cont2_3_textbox {
+    opacity: 1;
+}
+
+.cont2_1,
+.cont2_2,
+.cont2_3 {
+    display: none;
+}
+
+.content2 div.on {
+    display: block;
+}
+
+
+/* cont3  */
+
+.content3 {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.swiper-slide img {
+    width: 90%;
+    object-fit: cover;
+    padding-left: 125px;
+}
