@@ -589,6 +589,7 @@ a {
 .css_R .css_textBox {
 	margin-top: 30%;
 	padding-left: 25px;
+	padding-right: 40px;
 }
 
 .css_R .css_textBox li {
@@ -606,12 +607,12 @@ a {
 }
 
 .css_R .css_textBox p:first-of-type {
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 600;
 }
 
 .css_R .css_textBox p:last-of-type {
-	font-size: 22px;
+	font-size: 18px;
 }
 
 .css_R .css_textBox li a {
@@ -664,7 +665,7 @@ a {
   }
 
 #Portfolio .portcont1 {
-	padding-top: 135px;
+	padding-top: 200px;
 }
 
 #Portfolio .portcont1 h2 {
