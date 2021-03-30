@@ -822,7 +822,7 @@ a {
 	position: absolute;
 	left: 0;
 	top: 250px;
-	margin-left: 10px;
+	margin-left: 30px;
 	z-index: 9999;
 }
 
@@ -835,107 +835,107 @@ a {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/button/before/be01.png) no-repeat;
+	background: url(../img/button.png) no-repeat;
 }
 
 #floatdiv ul li #btn02 {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/button/before/be02.png) no-repeat;
+	background: url(../img/button.png) no-repeat;
 }
 
 #floatdiv ul li #btn03 {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/button/before/be03.png) no-repeat;
+	background: url(../img/button.png) no-repeat;
 }
 
 #floatdiv ul li #btn04 {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/button/before/be04.png) no-repeat;
+	background: url(../img/button.png) no-repeat;
 }
 
 #floatdiv ul li #btn05 {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/button/before/be05.png) no-repeat;
+	background: url(../img/button.png) no-repeat;
 }
 
 #floatdiv ul li #btn06 {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/button/before/be06.png) no-repeat;
+	background: url(../img/button.png) no-repeat;
 }
 
 #floatdiv ul li #btn07 {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/button/before/be07.png) no-repeat;
+	background: url(../img/button.png) no-repeat;
 }
 
 
 #floatdiv ul li:hover #btn01 {
-	background: url(../images/button/after/af01.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li:hover #btn02 {
-	background: url(../images/button/after/af02.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li:hover #btn03 {
-	background: url(../images/button/after/af03.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li:hover #btn04 {
-	background: url(../images/button/after/af04.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li:hover #btn05 {
-	background: url(../images/button/after/af05.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li:hover #btn06 {
-	background: url(../images/button/after/af06.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li:hover #btn07 {
-	background: url(../images/button/after/af07.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 
 #floatdiv ul li.active #btn01 {
-	background: url(../images/button/after/af01.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li.active #btn02 {
-	background: url(../images/button/after/af02.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li.active #btn03 {
-	background: url(../images/button/after/af03.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li.active #btn04 {
-	background: url(../images/button/after/af04.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li.active #btn05 {
-	background: url(../images/button/after/af05.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li.active #btn06 {
-	background: url(../images/button/after/af06.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 #floatdiv ul li.active #btn07 {
-	background: url(../images/button/after/af07.png) no-repeat;
+	background: url(../img/button_on.png) no-repeat;
 }
 
 /* 물결배경 */
