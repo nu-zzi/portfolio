@@ -300,7 +300,7 @@ section #main_img .pc_main ul li a {
 section #main_img .pc_main ul li.visual_0 {
 	left: 0;
 	background: url(../img/banner1.jpg) no-repeat center center;
-	background-size: cover;
+	background-size: contain;
 
 }
 
@@ -433,14 +433,14 @@ section #main_cont2 {
 }
 
 section #main_cont2 #cont2_wrap {
-	width: 1180px;
+	width: 93%;
 	margin: 0 auto;
 }
 
 section #main_cont2 #cont2_wrap .cont2 {
 	width: 295px;
 	padding-top: 220px;
-	padding-left: 25px;
+	padding-left: 8%;
 	text-align: right;
 }
 
@@ -591,13 +591,13 @@ section #main_cont4 {
 }
 
 section #main_cont4 #cont4_wrap {
-	width: 1180px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 section #main_cont4 #cont4_wrap .cont4 {
-	padding-top: 260px;
-	padding-left: 300px;
+	padding-top: 265px;
+	padding-left: 35%;
 }
 
 section #main_cont4 #cont4_wrap .cont4 h2 {
