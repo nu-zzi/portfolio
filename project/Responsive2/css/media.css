@@ -214,11 +214,11 @@
     }
 
     section #main_cont5 {
-        min-width: 320px;
+        min-width: 350px;
     }
 
     section #main_cont5 #cont5_wrap {
-        width: 95%;
+        width: 100%;
     }
 
     section #main_cont5 #cont5_wrap .cont5_sns img {
@@ -235,7 +235,7 @@
     }
 
     footer #footer_wrap {
-        min-width: 320px;
+        min-width: 380px;
     }
 }
 
@@ -410,7 +410,7 @@
     }
 
     section #main_cont1 #cont1_list .list1 {
-        width: 77%;
+        width: 100%;
     }
 
     section #main_cont1 #cont1_list .list1 ul {
@@ -549,6 +549,14 @@ section #main_img .pc_main ul li.visual_0 {
 
     section #main_cont5 #cont5_wrap .cont5_sns img {
         height: 205px;
+    }
+
+    section #main_cont6 #cont6_wrap .store_search {
+        width: 380px;
+    }
+
+    section #main_cont6 #cont6_wrap .store_search input {
+        width: 380px;
     }
 
     footer #footer_wrap .bottom_nav li {
