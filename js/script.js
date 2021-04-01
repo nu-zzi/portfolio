@@ -6,7 +6,6 @@ $(function () {
     _profilePageChartPercent();
     _CSSPageAutoScroll();
     _CSSSwiper();
-   /*  _ResponsiveSize(); */
     _portfolioLoadmore();
     _contactPageLettering();
 });
@@ -352,16 +351,6 @@ function _CSSSwiper() {
             el: '.swiper-pagination3',
             clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
         }
-    });
-}
-
-function _ResponsiveSize() {
-    $('.css_imgBox2 .css_img').click(function () {
-        window.open("../portfolio/project/Responsive1/index.html", "width=768, height=742, top=100, left=500");
-    });
-
-    $('.css_imgBox3 .css_img').click(function () {
-        window.open("../portfolio/project/Responsive1/index.html", "width=480, height=742, top=100, left=500");
     });
 }
 
