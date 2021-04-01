@@ -563,6 +563,10 @@ section #main_img .pc_main ul li.visual_0 {
         margin: 3px 3px;
     }
 
+    footer #footer_wrap .bottom_nav li:last-of-type {
+        display: none;
+    }
+
     footer #footer_wrap .bottom_nav li a {
         font-size: 12px;
     }
@@ -572,10 +576,10 @@ section #main_img .pc_main ul li.visual_0 {
     }
 
     footer #footer_wrap .foot .copy_info span {
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
     footer #footer_wrap .foot p {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
