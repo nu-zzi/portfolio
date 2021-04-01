@@ -6,6 +6,7 @@ $(function () {
     _profilePageChartPercent();
     _CSSPageAutoScroll();
     _CSSSwiper();
+    _ResponsiveSize();
     _portfolioLoadmore();
     _contactPageLettering();
 });
@@ -322,36 +323,46 @@ function _CSSSwiper() {
         spaceBetween: 30, //슬라이드 간격
         loop: true, //무한반복
         pagination: {
-          el: '.swiper-pagination1',
-          clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
+            el: '.swiper-pagination1',
+            clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
         },
         autoplay: {
-          delay: 3000,
+            delay: 3000,
         },
         navigation: {
-          nextEl: '.next1', //다음버튼 클래스명
-          prevEl: '.prev1', //이전버튼 클래스명
+            nextEl: '.next1', //다음버튼 클래스명
+            prevEl: '.prev1', //이전버튼 클래스명
         }
-      });
-  
-      var swiper2 = new Swiper('.swiper2', {
+    });
+
+    var swiper2 = new Swiper('.swiper2', {
         slidesPerView: 3, // 동시에 보여줄 슬라이드 갯수
         spaceBetween: 30, //슬라이드 간격
         /* loop: true, //무한반복 */
         pagination: {
-          el: '.swiper-pagination2',
-          clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
+            el: '.swiper-pagination2',
+            clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
         }
-      });
-  
-      var swiper3 = new Swiper('.swiper3', {
+    });
+
+    var swiper3 = new Swiper('.swiper3', {
         spaceBetween: 30, //슬라이드 간격
         /* loop: true, //무한반복 */
         pagination: {
-          el: '.swiper-pagination3',
-          clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
+            el: '.swiper-pagination3',
+            clickable: true, // 페이징을 클릭하면 해당 영역으로 이동
         }
-      });
+    });
+}
+
+function _ResponsiveSize() {
+    $('.css_imgBox2 .css_img').click(function () {
+        window.open("../portfolio/project/Responsive1/index.html", "width=768, height=742, top=100, left=500");
+    });
+
+    $('.css_imgBox3 .css_img').click(function () {
+        window.open("../portfolio/project/Responsive1/index.html", "width=480, height=742, top=100, left=500");
+    });
 }
 
 function _portfolioLoadmore() {

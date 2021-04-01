@@ -148,7 +148,8 @@ a {
 	position: absolute;
 	z-index: 1;
 	width: 100%;
-	height: calc(100% - 50px);
+	height: 100%;
+/* 	height: calc(100% - 50px); */
 	text-align: center;
 	
 }
@@ -217,8 +218,8 @@ a {
 	padding-top: 150px;
 	box-sizing: border-box;
 	position: absolute;
-	left: 2%;
-	top: 0;
+	left: 0%;
+	top: 50px;
 	height: 100%;
 }
 
@@ -230,9 +231,9 @@ a {
 
 .profile_textBox {
 	position: absolute;
-	top: 23%;
+	top: 25%;
 	left: 33%;
-	width: 580px;
+	width: 600px;
 	background: #b3e0f0;
 	border: 20px solid #add9e8;
 	border-radius: 70px 70px 70px 0;
@@ -241,7 +242,7 @@ a {
 
 .profile_text li {
 	float: left;
-	margin: 20px 37px;
+	margin: 20px 42px;
 }
 
 .profile_text li span {
@@ -270,7 +271,7 @@ a {
 	width: 800px;
 	min-width: 600px;
 	height: 140px;
-	top: calc(23% + 340px);
+	top: calc(30% + 340px);
 	right: -1200px;
 }
 
