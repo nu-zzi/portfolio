@@ -6,7 +6,7 @@ $(function () {
     _profilePageChartPercent();
     _CSSPageAutoScroll();
     _CSSSwiper();
-    _ResponsiveSize();
+   /*  _ResponsiveSize(); */
     _portfolioLoadmore();
     _contactPageLettering();
 });
