@@ -24,19 +24,10 @@
     <script type="text/javascript" src="js/script.js"></script>
 
     <style>
-        #bookmark {
-            display: block;
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            margin-top: -15px;
-            padding: 5px;
-            color: white;
-            width: 100px;
-            height: 20px;
-            border: 1px solid white;
-            text-align: center;
+        *:focus {
+            outline: none;
         }
+
     </style>
 </head>
 
@@ -71,8 +62,6 @@
                     <li><a href="#Portfolio">Portfolio</a></li>
                     <li><a href="#Contact_Me" onclick="triggerAnimation();">Contact_Me</a></li>
                 </ul>
-                <!-- <a href="#" onclick="bookmark()" class="fay">FAVORITE</a> -->
-                <!-- <a href="#" tabindex="1" id="bookmark" title="북마크">즐겨찾기</a> -->
             </div>
         </div><!-- id="header" -->
 
@@ -458,7 +447,8 @@
                                     </div>
                                     <div class="css_imgBox2">
                                         <div class="css_monitor">
-                                            <a href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
+                                            <a
+                                                href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
                                                 <img src="img/web_tablet.png" alt="모니터">
                                             </a>
                                         </div>
@@ -470,7 +460,8 @@
                                     </div>
                                     <div class="css_imgBox3">
                                         <div class="css_monitor">
-                                            <a href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
+                                            <a
+                                                href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
                                                 <img src="img/web_mobile.png" alt="모니터">
                                             </a>
                                         </div>
@@ -600,7 +591,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
 
                     <div class="swiper-pagination swiper-pagination1"></div>
@@ -618,10 +609,11 @@
                     <ul class="cf" data-aos="fade-down">
                         <li id="design1">
                             <div class="design_img">
-                                <a href="../portfolio/project/CSS_2/index.html" class="work01"><img src="img/port_1.jpg" alt="portfolio1"></a>
+                                <a href="../portfolio/project/CSS_2/index.html" target="_blank" class="work01"><img src="img/port_1.jpg"
+                                        alt="portfolio1"></a>
                             </div>
                             <div class="hover">
-                                <a href="../portfolio/project/CSS_2/index.html">
+                                <a href="../portfolio/project/CSS_2/index.html" target="_blank">
                                     <h4>하이트 진로</h4>
                                     <p>CSS</p>
                                 </a>
@@ -629,10 +621,11 @@
                         </li>
                         <li id="design2">
                             <div class="design_img">
-                                <a href="../portfolio/project/Responsive2/index.html"><img src="img/port_2.png" alt="portfolio2"></a>
+                                <a href="../portfolio/project/Responsive2/index.html" target="_blank"><img src="img/port_2.png"
+                                        alt="portfolio2"></a>
                             </div>
                             <div class="hover">
-                                <a href="#">
+                                <a href="../portfolio/project/Responsive2/index.html" target="_blank">
                                     <h4>에넥스</h4>
                                     <p>Responsive</p>
                                 </a>
@@ -640,10 +633,11 @@
                         </li>
                         <li id="design3">
                             <div class="design_img">
-                                <a href="../portfolio/project/JS_1/index.html"><img src="img/port_3.png" alt="portfolio3"></a>
+                                <a href="../portfolio/project/JS_1/index.html" target="_blank"><img src="img/port_3.png"
+                                        alt="portfolio3"></a>
                             </div>
                             <div class="hover">
-                                <a href="#">
+                                <a href="../portfolio/project/JS_1/index.html" target="_blank">
                                     <h4>레츠 코레일</h4>
                                     <p>Script</p>
                                 </a>
@@ -651,10 +645,11 @@
                         </li>
                         <li id="design4" class="margin">
                             <div class="design_img">
-                                <a href="../portfolio/project/Responsive1/index.html"><img src="img/port_4.png" alt="portfolio4"></a>
+                                <a href="../portfolio/project/Responsive1/index.html " target="_blank"><img src="img/port_4.png"
+                                        alt="portfolio4"></a>
                             </div>
                             <div class="hover">
-                                <a href="#">
+                                <a href="../portfolio/project/Responsive1/index.html" target="_blank">
                                     <h4>블래이드 앤 소울</h4>
                                     <p>Responsive</p>
                                 </a>
@@ -662,10 +657,11 @@
                         </li>
                         <li id="design5">
                             <div class="design_img">
-                                <a href="../portfolio/project/CSS_1/index.html"><img src="img/port_5.png" alt="portfolio5"></a>
+                                <a href="../portfolio/project/CSS_1/index.html" target="_blank"><img src="img/port_5.png"
+                                        alt="portfolio5"></a>
                             </div>
                             <div class="hover">
-                                <a href="#">
+                                <a href="../portfolio/project/CSS_1/index.html" target="_blank">
                                     <h4>커피스미스</h4>
                                     <p>CSS</p>
                                 </a>
@@ -673,10 +669,10 @@
                         </li>
                         <li id="design6">
                             <div class="design_img">
-                                <a href="#"><img src="img/ready.jpg" alt="portfolio6"></a>
+                                <a href="#none"><img src="img/ready.jpg" alt="portfolio6"></a>
                             </div>
                             <div class="hover">
-                                <a href="#">
+                                <a href="#none">
                                     <h4>준비중 입니다.</h4>
                                     <p>2020/09/09</p>
                                 </a>
@@ -684,10 +680,10 @@
                         </li>
                         <li id="design7">
                             <div class="design_img">
-                                <a href="#"><img src="img/ready.jpg" alt="portfolio7"></a>
+                                <a href="#none"><img src="img/ready.jpg" alt="portfolio7"></a>
                             </div>
                             <div class="hover">
-                                <a href="#">
+                                <a href="#none">
                                     <h4>준비중 입니다.</h4>
                                     <p>CSS</p>
                                 </a>
@@ -695,10 +691,10 @@
                         </li>
                         <li id="design8" class="margin">
                             <div class="design_img">
-                                <a href="#"><img src="img/ready.jpg" alt="portfolio8"></a>
+                                <a href="#none"><img src="img/ready.jpg" alt="portfolio8"></a>
                             </div>
                             <div class="hover">
-                                <a href="#">
+                                <a href="#none">
                                     <h4>준비중 입니다.</h4>
                                     <p>CSS</p>
                                 </a>
@@ -711,10 +707,10 @@
                         <ul class="cf">
                             <li id="design9">
                                 <div class="design_img">
-                                    <a href="#" class="work01"><img src="img/ready.jpg" alt="portfolio9"></a>
+                                    <a href="#none" class="work01"><img src="img/ready.jpg" alt="portfolio9"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
@@ -722,10 +718,10 @@
                             </li>
                             <li id="design10">
                                 <div class="design_img">
-                                    <a href="#"><img src="img/ready.jpg" alt="portfolio10"></a>
+                                    <a href="#none"><img src="img/ready.jpg" alt="portfolio10"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
@@ -733,10 +729,10 @@
                             </li>
                             <li id="design11">
                                 <div class="design_img">
-                                    <a href="#"><img src="img/ready.jpg" alt="portfolio11"></a>
+                                    <a href="#none"><img src="img/ready.jpg" alt="portfolio11"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
@@ -744,10 +740,10 @@
                             </li>
                             <li id="design12" class="margin">
                                 <div class="design_img">
-                                    <a href="#"><img src="img/ready.jpg" alt="portfolio12"></a>
+                                    <a href="#none"><img src="img/ready.jpg" alt="portfolio12"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
@@ -755,10 +751,10 @@
                             </li>
                             <li id="design13">
                                 <div class="design_img">
-                                    <a href="#"><img src="img/ready.jpg" alt="portfolio13"></a>
+                                    <a href="#none"><img src="img/ready.jpg" alt="portfolio13"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
@@ -766,10 +762,10 @@
                             </li>
                             <li id="design14">
                                 <div class="design_img">
-                                    <a href="#"><img src="img/ready.jpg" alt="portfolio14"></a>
+                                    <a href="#none"><img src="img/ready.jpg" alt="portfolio14"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
@@ -777,10 +773,10 @@
                             </li>
                             <li id="design15">
                                 <div class="design_img">
-                                    <a href="#"><img src="img/ready.jpg" alt="portfolio15"></a>
+                                    <a href="#none"><img src="img/ready.jpg" alt="portfolio15"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
@@ -788,10 +784,10 @@
                             </li>
                             <li id="design16" class="margin">
                                 <div class="design_img">
-                                    <a href="#"><img src="img/ready.jpg" alt="portfolio16"></a>
+                                    <a href="#none"><img src="img/ready.jpg" alt="portfolio16"></a>
                                 </div>
                                 <div class="hover">
-                                    <a href="#">
+                                    <a href="#none">
                                         <h4>준비중 입니다.</h4>
                                         <p>CSS</p>
                                     </a>
