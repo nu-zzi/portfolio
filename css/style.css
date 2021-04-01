@@ -28,8 +28,12 @@ ul {
 	outline: none;
 }
 
-div {
-	outline: none;
+a:active,
+a:focus,
+input {
+	outline: 0;
+	outline-style: none;
+	outline-width: 0;
 }
 
 .cf:after {
@@ -134,7 +138,7 @@ a {
 	font-weight: 600;
 }
 
-#contents > div.mn {
+#contents>div.mn {
 	width: 1200px;
 	height: calc(100vh);
 	min-height: 650px;
@@ -154,9 +158,9 @@ a {
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-/* 	height: calc(100% - 50px); */
+	/* 	height: calc(100% - 50px); */
 	text-align: center;
-	
+
 }
 
 #main .main_me img {
@@ -171,6 +175,7 @@ a {
 	bottom: 10px;
 	font-size: 0;
 	text-align: center;
+	z-index: 999;
 }
 
 #main .pulse {
@@ -436,7 +441,7 @@ a {
 	background: url(../img/web_mac2.png) no-repeat center center;
 	background-size: auto calc(100% - 135px);
 	background-position-y: 115px;
-} 
+}
 
 .css_wrap {
 	width: 100%;
@@ -453,9 +458,9 @@ a {
 .css_imgBox {
 	position: relative;
 	width: 600px;
-    height: 450px;
-    top: 12%;
-    left: 11%;
+	height: 450px;
+	top: 12%;
+	left: 11%;
 }
 
 .css_L .css_monitor {
@@ -477,8 +482,8 @@ a {
 .css_L .css_img {
 	position: absolute;
 	top: 9.5%;
-    width: 600px;
-    height: 400px;
+	width: 600px;
+	height: 400px;
 	overflow: hidden;
 }
 
@@ -525,9 +530,9 @@ a {
 .css_imgBox2 .css_img {
 	position: absolute;
 	top: 32px;
-    left: 12px;
-    width: 185px;
-    height: 247px;
+	left: 12px;
+	width: 185px;
+	height: 247px;
 	overflow: hidden;
 }
 
@@ -547,9 +552,9 @@ a {
 .css_imgBox3 {
 	position: absolute;
 	width: 140px;
-    height: 360px;
-    top: 250px;
-    right: 40px;
+	height: 360px;
+	top: 250px;
+	right: 40px;
 }
 
 .css_imgBox3 .css_monitor {
@@ -567,9 +572,9 @@ a {
 .css_imgBox3 .css_img {
 	position: absolute;
 	top: 27px;
-    left: 52px;
-    width: 122px;
-    height: 242px;
+	left: 52px;
+	width: 122px;
+	height: 242px;
 	overflow: hidden;
 }
 
@@ -624,7 +629,7 @@ a {
 .css_R .css_textBox li a {
 	color: #26376f;
 	background-position: 0 -0.1em;
-    background-image: linear-gradient(to right, #a3e1f9 0, #b9c6f3 100%);
+	background-image: linear-gradient(to right, #a3e1f9 0, #b9c6f3 100%);
 	padding: 2px 4px;
 	border-radius: 4px;
 	font-size: 13px;
@@ -645,9 +650,9 @@ a {
 .swiper-container {
 	width: 95%;
 	height: 569px;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
 	text-align: center;
 	font-size: 18px;
 	background: #fff;
@@ -668,7 +673,7 @@ a {
 	-webkit-align-items: center;
 	/* 위아래 기준 중앙정렬 */
 	align-items: center;
-  }
+}
 
 #Portfolio .portcont1 {
 	padding-top: 200px;
@@ -749,12 +754,12 @@ a {
 
 #Contact_Me .contact_wrap {
 	width: 950px;
-    height: 630px;
-    background: #bbdbff;
-    border-radius: 50px;
-    margin: 0 auto;
-    position: relative;
-    top: 21%;
+	height: 630px;
+	background: #bbdbff;
+	border-radius: 50px;
+	margin: 0 auto;
+	position: relative;
+	top: 21%;
 }
 
 .contact_me {
@@ -804,18 +809,18 @@ a {
 
 .button {
 	float: left;
-    position: relative;
-    bottom: -65px;
-    left: 20%;
-    color: #7396ff;
-    text-transform: uppercase;
-    opacity: 0;
-    visibility: hidden;
-    cursor: pointer;
-    font-size: 20px;
-    background: #b9c6f3;
-    padding: 7px 13px;
-    border-radius: 10px;
+	position: relative;
+	bottom: -65px;
+	left: 20%;
+	color: #7396ff;
+	text-transform: uppercase;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	font-size: 20px;
+	background: #b9c6f3;
+	padding: 7px 13px;
+	border-radius: 10px;
 }
 
 .button:hover {
