@@ -402,6 +402,7 @@
 
     section #main_cont1 {
         width: 100%;
+        min-width: 600px;
     }
 
     section #main_cont1 #cont1_list {
@@ -427,7 +428,7 @@
     }
 
     section #main_cont2 {
-        min-width: 480px;
+        min-width: 450px;
     }
 
     section #main_cont2 #cont2_wrap {
@@ -486,7 +487,7 @@
 @media screen and (max-width:480px) {
 
     section #main_img {
-        min-width: 480px;
+        min-width: 450px;
         height: 250px;
     }
 
@@ -500,20 +501,33 @@ section #main_img .pc_main ul li.visual_0 {
         margin-left: -48px;
     }
 
+    section #main_cont1 {
+        width: 100%;
+        min-width: 450px;
+    }
+    
     section #main_cont1 #cont1_list .list1 {
-        width: 58%;
+        width: 100%;
     }
 
     section #main_cont1 #cont1_list .list1 ul {
-        width: 260px;
+        width: 250px;
+    }
+
+    section #main_cont1 #cont1_list .list1 ul li {
+        width: 100%;
+    }
+
+    section #main_cont1 #cont1_list .list1 a.plus {
+        margin-right: 20px;
     }
 
     section #main_cont2 #cont2_wrap {
-        width: 480px;
+        width: 450px;
     }
 
     section #main_cont3 {
-        min-width: 480px;
+        min-width: 440px;
         height: 480px;
     }
 
@@ -538,7 +552,7 @@ section #main_img .pc_main ul li.visual_0 {
     }
 
     footer #footer_wrap .bottom_nav li {
-        margin: 3px 4px;
+        margin: 3px 3px;
     }
 
     footer #footer_wrap .bottom_nav li a {
