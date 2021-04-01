@@ -148,7 +148,7 @@
         height: 400px;
         min-width: 1024px;
     }
-    
+
     section #main_img #slide_img_wrap1 {
         height: 100%;
     }
@@ -169,7 +169,7 @@
         height: 100%;
     }
 
-    
+
 
     /* 에넥스딜 */
     section #main_cont1 {
@@ -180,7 +180,7 @@
         width: 95%;
         clear: both;
     }
-    
+
 
     section #main_cont1 #cont1_list .list1 ul {
         width: 330px;
@@ -491,7 +491,7 @@
         height: 250px;
     }
 
-section #main_img .pc_main ul li.visual_0 {
+    section #main_img .pc_main ul li.visual_0 {
         background-size: cover;
     }
 
@@ -505,7 +505,7 @@ section #main_img .pc_main ul li.visual_0 {
         width: 100%;
         min-width: 450px;
     }
-    
+
     section #main_cont1 #cont1_list .list1 {
         width: 100%;
     }
@@ -531,12 +531,9 @@ section #main_img .pc_main ul li.visual_0 {
         height: 480px;
     }
 
-    
-
     section #main_cont4 {
         display: none;
     }
-
 
     section #main_cont5 #cont5_wrap .cont5_sns ul li {
         width: calc(100% / 2 - 3px);
