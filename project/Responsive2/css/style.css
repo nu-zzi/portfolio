@@ -285,6 +285,10 @@ section #main_img .pc_main {
 	overflow: hidden;
 }
 
+section #main_img .pc_main ul {
+	overflow: hidden;
+}
+
 section #main_img .pc_main ul li {
 	float: left;
 	position: absolute;
