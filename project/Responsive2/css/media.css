@@ -525,7 +525,7 @@ section #main_img .pc_main ul li.visual_0 {
 
 
     section #main_cont5 #cont5_wrap .cont5_sns ul li {
-        width: calc(100% / 2 - 5px);
+        width: calc(100% / 2 - 3px);
     }
 
     section #main_cont5 #cont5_wrap .cont5_sns ul li:nth-of-type(2),
