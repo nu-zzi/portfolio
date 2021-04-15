@@ -449,7 +449,7 @@ a {
 }
 
 .css_L {
-	width: 60%;
+	width: 50%;
 	height: 100%;
 	float: left;
 	position: relative;
@@ -509,9 +509,9 @@ a {
 
 .css_imgBox2 {
 	position: absolute;
-	width: 210px;
-	top: 240px;
-	left: 20px;
+	width: 200px;
+    top: 240px;
+    left: 50px;
 }
 
 .css_imgBox2 .css_monitor {
@@ -529,10 +529,10 @@ a {
 
 .css_imgBox2 .css_img {
 	position: absolute;
-	top: 32px;
-	left: 12px;
-	width: 185px;
-	height: 247px;
+	top: 30px;
+    left: 11px;
+    width: 178px;
+    height: 235px;
 	overflow: hidden;
 }
 
@@ -552,16 +552,16 @@ a {
 .css_imgBox3 {
 	position: absolute;
 	width: 140px;
-	height: 360px;
-	top: 250px;
-	right: 40px;
+    height: 360px;
+    top: 250px;
+    right: -105px;
 }
 
 .css_imgBox3 .css_monitor {
 	width: 100%;
 	position: absolute;
 	top: 0%;
-	left: 30%;
+	left: 0%;
 }
 
 .css_imgBox3 .css_monitor img {
@@ -571,10 +571,10 @@ a {
 
 .css_imgBox3 .css_img {
 	position: absolute;
-	top: 27px;
-	left: 52px;
-	width: 122px;
-	height: 242px;
+	top: 26px;
+    left: 10px;
+    width: 122px;
+    height: 243px;
 	overflow: hidden;
 }
 
@@ -623,7 +623,8 @@ a {
 }
 
 .css_R .css_textBox p:last-of-type {
-	font-size: 18px;
+	font-size: 17px;
+	letter-spacing: -0.2px;
 }
 
 .css_R .css_textBox li a {
@@ -648,8 +649,8 @@ a {
 }
 
 .swiper-container {
-	width: 95%;
-	height: 569px;
+	width: 91%;
+    height: 545px;
 }
 
 .swiper-slide {

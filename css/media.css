@@ -1,0 +1,38 @@
+@media screen and (max-width:1440px) {
+    body {
+        min-width: 1280px;
+    }
+
+    
+}
+
+@media screen and (max-width:1280px) {
+
+    body {
+        min-width: 1024px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        min-width: 800px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        min-width: 480px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        min-width: 400px;
+    }
+}
