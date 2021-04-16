@@ -20,7 +20,7 @@
                 </a>
             </div>
             <div class="language-wrapper">
-                <a href="login.html">Login</a>
+                <a href="#none">Login</a>
                 <a href="#none"><i class="fas fa-shopping-cart"></i></a>
                 <select name="language">
                     <option value="" disabled selected hidden>Language</option>
@@ -89,114 +89,505 @@
     </div>
 
     <div class="container cf">
-        <div class="menu">
-            <h1 class="hidden">~_~</h1>
-            <h2>MENU</h2>
-            <ul class="menu_subtext">
-                <li><a href="#none">coffee</a></li>
-                <li><a href="#none">juice</a></li>
-                <li><a href="#none">beverage</a></li>
-                <li><a href="#none">iceflake</a></li>
-                <li><a href="#none">MD</a></li>
-            </ul>
-            <p><a href="#none" class="menu_all"> + 전체보기</a></p>
+        <section class="tab_Box">
+            
+            <div class="menu cf">
+                <h1 class="hidden">~_~</h1>
+                <h2>MENU</h2>
 
-            <div class="menu_list">
-                <ul class="cf">
-                    <li class="menu_item cf">
-                        <a href="#none">
-                            <img src="images/menu_img1.jpg" alt="아메리카노">
-                            <div class="menu_text">
-                                <p>아메리카노</p>
-                                <p>진한 에스프레소와 뜨거운 물을 섞어 커피스미스의 깔끔하고 강렬한 에스프레소를 가장 부드럽게 잘 느낄 수 있는 커피</p>
-                            </div>
-                        </a>
+                <input type="radio" class="tab" id="tab_mu1" name="tab1" checked>
+                <input type="radio" class="tab" id="tab_mu2" name="tab1">
+                <input type="radio" class="tab" id="tab_mu3" name="tab1">
+                <input type="radio" class="tab" id="tab_mu4" name="tab1">
+                <input type="radio" class="tab" id="tab_mu5" name="tab1">
+    
+                <div class="tab_button cf">
+                    <label for="tab_mu1">COFFEE</label>
+                    <label for="tab_mu2">BEVERAGE</label>
+                    <label for="tab_mu3">DESSERT</label>
+                    <label for="tab_mu4">ICEFLAKE</label>
+                    <label for="tab_mu5">MD</label>
+                </div>
 
-                        <div class="text-wrapper cf">
-                            <div class="img_bottom_L">
-                                <p>HOT 아메리카노</p>
-                                <span>&#8361; 4,100</span>
+                <p><a href="#none" class="menu_all"> + 전체보기</a></p>
+
+                <section class="menu_list menu_list1">
+                    <ul class="cf">
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="images/menu_img1.jpg" alt="아메리카노">
+                                <div class="menu_text">
+                                    <p>아메리카노</p>
+                                    <p>진한 에스프레소와 뜨거운 물을 섞어 커피스미스의 깔끔하고 강렬한 에스프레소를 가장 부드럽게 잘 느낄 수 있는 커피</p>
+                                </div>
+                            </a>
+
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>HOT 아메리카노</p>
+                                    <span>&#8361; 4,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                            <div class="img_bottom_R">
-                                <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="images/menu_img2.jpg" alt="카페라떼">
+                                <div class="menu_text">
+                                    <p>카페라떼</p>
+                                    <p>풍부하고 진한 에스프레소가 신선한 스팀 밀크를 만나 부드러워진 커피 위에 우유 거품을 살짝 얹은 대표적인 커피 라떼</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>HOT 카페라떼</p>
+                                    <span>&#8361; 4,600</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="menu_item cf">
-                        <a href="#none">
-                            <img src="images/menu_img2.jpg" alt="카페라떼">
-                            <div class="menu_text">
-                                <p>카페라떼</p>
-                                <p>풍부하고 진한 에스프레소가 신선한 스팀 밀크를 만나 부드러워진 커피 위에 우유 거품을 살짝 얹은 대표적인 커피 라떼</p>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="images/menu_img3.jpg" alt="캬라멜비엔나">
+                                <div class="menu_text">
+                                    <p>캬라멜비엔나</p>
+                                    <p>아메리카노 위에 휘핑을 얹고 그 위에 캬라멜 시럽을 올린 달콤쌉쌀 커피음료</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>ICE 캬라멜비엔나</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </a>
-                        <div class="text-wrapper cf">
-                            <div class="img_bottom_L">
-                                <p>HOT 카페라떼</p>
-                                <span>&#8361; 4,600</span>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="images/menu_img4.jpg" alt="캬라멜카푸치노">
+                                <div class="menu_text">
+                                    <p>캬라멜카푸치노</p>
+                                    <p>우유위에 풍성한 우유 거품을 얹고 에스프레소를 부은 후 벌집 모양으로 카라멜 드리즐을 올린 달콤하고 부드러운 커피 음료</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>ICE 캬라멜카푸치노</p>
+                                    <span>&#8361; 4,800</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                            <div class="img_bottom_R">
-                                <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="images/menu_img5.jpg" alt="바닐라라떼">
+                                <div class="menu_text">
+                                    <p>바닐라라떼</p>
+                                    <p>바닐라시럽이 부드럽게 어우러진 달콤한 라떼</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>ICE 바닐라라떼</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="menu_item cf">
-                        <a href="#none">
-                            <img src="images/menu_img3.jpg" alt="캬라멜비엔나">
-                            <div class="menu_text">
-                                <p>캬라멜비엔나</p>
-                                <p>아메리카노 위에 휘핑을 얹고 그 위에 캬라멜 시럽을 올린 달콤쌉쌀 커피음료</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_list menu_list2">
+                    <ul class="cf">
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/ade2.png" alt="에이드">
+                                <div class="menu_text">
+                                    <p>레몬에이드</p>
+                                    <p>상큼한 레몬과 톡 쏘는 탄산수가 어우러진 청량음료</p>
+                                </div>
+                            </a>
+
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>레몬에이드</p>
+                                    <span>&#8361; 4,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </a>
-                        <div class="text-wrapper cf">
-                            <div class="img_bottom_L">
-                                <p>ICE 캬라멜비엔나</p>
-                                <span>&#8361; 5,100</span>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/fra1.png" alt="프라페">
+                                <div class="menu_text">
+                                    <p>요거트프라페</p>
+                                    <p>상큼하고 달달한 요거트로 만든 프라페</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>요거트프라페</p>
+                                    <span>&#8361; 4,600</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                            <div class="img_bottom_R">
-                                <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/fra2.png" alt="프라페">
+                                <div class="menu_text">
+                                    <p>캬라멜프라페</p>
+                                    <p>달달한 캬라멜과 에스프레소가 어우러진 프라페</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>캬라멜프라페</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="menu_item cf">
-                        <a href="#none">
-                            <img src="images/menu_img4.jpg" alt="캬라멜카푸치노">
-                            <div class="menu_text">
-                                <p>캬라멜카푸치노</p>
-                                <p>우유위에 풍성한 우유 거품을 얹고 에스프레소를 부은 후 벌집 모양으로 카라멜 드리즐을 올린 달콤하고 부드러운 커피 음료</p>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/snow2.png" alt="스노우쉐이크">
+                                <div class="menu_text">
+                                    <p>망고 스노우쉐이크</p>
+                                    <p>부드럽게 갈린 스노우쉐이크에 망고가 어우러진 음료</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>망고 스노우쉐이크</p>
+                                    <span>&#8361; 4,800</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </a>
-                        <div class="text-wrapper cf">
-                            <div class="img_bottom_L">
-                                <p>ICE 캬라멜카푸치노</p>
-                                <span>&#8361; 4,800</span>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/snow3.png" alt="스노우쉐이크">
+                                <div class="menu_text">
+                                    <p>녹차 스노우쉐이크</p>
+                                    <p>부드럽게 갈린 스노우쉐이크에 녹차가 어우러진 음료</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>녹차 스노우쉐이크</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                            <div class="img_bottom_R">
-                                <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_list menu_list3">
+                    <ul class="cf">
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bra4.jpg" alt="디저트">
+                                <div class="menu_text">
+                                    <p>생크림와플</p>
+                                    <p>달콤바삭 와플에 생크림과 베리를 곁들인 디저트</p>
+                                </div>
+                            </a>
+
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>생크림와플</p>
+                                    <span>&#8361; 4,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="menu_item cf">
-                        <a href="#none">
-                            <img src="images/menu_img5.jpg" alt="바닐라라떼">
-                            <div class="menu_text">
-                                <p>바닐라라떼</p>
-                                <p>바닐라시럽이 부드럽게 어우러진 달콤한 라떼</p>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/cake2.jpg" alt="디저트">
+                                <div class="menu_text">
+                                    <p>딸기케이크</p>
+                                    <p>부드러운 딸기생크림케익</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>딸기케이크</p>
+                                    <span>&#8361; 4,600</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </a>
-                        <div class="text-wrapper cf">
-                            <div class="img_bottom_L">
-                                <p>ICE 바닐라라떼</p>
-                                <span>&#8361; 5,100</span>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/ge1.jpg" alt="디저트">
+                                <div class="menu_text">
+                                    <p>베리젤라또</p>
+                                    <p>달달하고 시원한 베리젤라또</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>베리젤라또</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                            <div class="img_bottom_R">
-                                <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/ge3.jpg" alt="디저트">
+                                <div class="menu_text">
+                                    <p>초코젤라또</p>
+                                    <p>달달하고 시원한 초코젤라또</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>초코 젤라또</p>
+                                    <span>&#8361; 4,800</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bra3.jpg" alt="디저트">
+                                <div class="menu_text">
+                                    <p>브라우니</p>
+                                    <p>달달한 초코 브라우니에 바닐라 아이스크림이 어우러진 디저트</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>브라우니</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_list menu_list4">
+                    <ul class="cf">
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bing1.png" alt="빙수">
+                                <div class="menu_text">
+                                    <p>녹차빙수</p>
+                                    <p>부드럽게 갈린 우유 얼음과 녹차가 어우러진 스미스빙수</p>
+                                </div>
+                            </a>
+
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>녹차빙수</p>
+                                    <span>&#8361; 4,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bing2.png" alt="빙수">
+                                <div class="menu_text">
+                                    <p>밀크티빙수</p>
+                                    <p>부드럽게 갈린 우유 얼음과 밀크티가 어우러진 스미스빙수</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>밀크티빙수</p>
+                                    <span>&#8361; 4,600</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bing3.png" alt="빙수">
+                                <div class="menu_text">
+                                    <p>요거트빙수</p>
+                                    <p>부드럽게 갈린 우유 얼음과 요거트가 어우러진 스미스빙수</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>요거트빙수</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bing4.png" alt="빙수">
+                                <div class="menu_text">
+                                    <p>커피빙수</p>
+                                    <p>부드럽게 갈린 우유 얼음과 커피가 어우러진 스미스빙수</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>커피빙수</p>
+                                    <span>&#8361; 4,800</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bing5.png" alt="빙수">
+                                <div class="menu_text">
+                                    <p>팥빙수</p>
+                                    <p>부드럽게 갈린 우유 얼음과 팥이 어우러진 스미스빙수</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>팥빙수</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="menu_list menu_list5">
+                    <ul class="cf">
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bean1.png" alt="MD">
+                                <div class="menu_text">
+                                    <p>MD</p>
+                                    <p>커피스미스가 엄선한 원두</p>
+                                </div>
+                            </a>
+
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>MD</p>
+                                    <span>&#8361; 4,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/bean2.png" alt="MD">
+                                <div class="menu_text">
+                                    <p>MD</p>
+                                    <p>커피스미스가 엄선한 원두</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>MD</p>
+                                    <span>&#8361; 4,600</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/drip1.png" alt="MD">
+                                <div class="menu_text">
+                                    <p>MD</p>
+                                    <p>커피스미스가 엄선한 핸드드립기구</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>MD</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/drip2.png" alt="MD">
+                                <div class="menu_text">
+                                    <p>MD</p>
+                                    <p>커피스미스가 엄선한 핸드드립기구</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>ICE MD</p>
+                                    <span>&#8361; 4,800</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu_item cf">
+                            <a href="#none">
+                                <img src="sub_img/drip3.png" alt="MD">
+                                <div class="menu_text">
+                                    <p>MD</p>
+                                    <p>커피스미스가 엄선한 더치커피</p>
+                                </div>
+                            </a>
+                            <div class="text-wrapper cf">
+                                <div class="img_bottom_L">
+                                    <p>ICE MD</p>
+                                    <span>&#8361; 5,100</span>
+                                </div>
+                                <div class="img_bottom_R">
+                                    <a href="#none"><i class="fas fa-cart-plus"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
             </div>
-        </div>
+        </section>
 
         <div class="news">
             <h2>NEWS / EVENT</h2>

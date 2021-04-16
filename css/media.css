@@ -19,9 +19,17 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
     body {
         min-width: 600px;
+    }
+
+    #CSS, #Script, #Responsive {
+        background-size: contain;
+    }
+
+    .css_wrap {
+        margin-top: 100px;
     }
 }
 
@@ -35,4 +43,13 @@
     body {
         min-width: 400px;
     }
+
+}
+
+@media screen and (max-width:320px) {
+    body {
+        min-width: 320px;
+    }
+
+   
 }
