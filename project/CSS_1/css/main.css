@@ -109,8 +109,8 @@ input.tab {
 }
 
 /* 체크되엇을떄 내용보이게 하기 */
-input.tab:nth-of-type(1):checked~section.menu_list:nth-of-type(1), 
-input.tab:nth-of-type(2):checked~section.menu_list:nth-of-type(2), 
+input.tab:nth-of-type(1):checked~section.menu_list1, 
+input.tab:nth-of-type(2):checked~section.menu_list2, 
 input.tab:nth-of-type(3):checked~section.menu_list3, 
 input.tab:nth-of-type(4):checked~section.menu_list4,
 input.tab:nth-of-type(5):checked~section.menu_list5 {
