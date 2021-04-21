@@ -27,7 +27,18 @@
 </head>
 
 <body>
+    <svg viewBox="0 0 120 28">
+        <defs>
+            <path id="wave"
+                d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </defs>
 
+        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+        <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+        <use id="wave5" class="wave" xlink:href="#wave" x="0" y="-6"></use>
+
+    </svg>
     <div id="floatdiv">
         <ul>
             <li class="active"><span id="btn01"></span></li>
@@ -39,9 +50,7 @@
             <li><span id="btn07" onclick="triggerAnimation();"></span></li>
         </ul>
     </div>
-    <div id="background_wave">
-        <div id="ocean"></div>
-    </div>
+   
     <div id="wrap">
         <div id="header">
             <div id="menuWrap" class="cf">
@@ -61,13 +70,15 @@
         </div><!-- id="header" -->
 
         <div id="contents">
+
             <div id="main" class="mn">
                 <div class="main_me">
-                    <img src="img/main.gif" alt="프로필사진">
+                    <img src="img/main2.gif" alt="프로필사진">
                 </div>
                 <div id="nextButton">
                     <span class="pulse">PUSH</span>
                 </div>
+                
             </div>
 
             <div id="profile" class="mn">
@@ -446,26 +457,26 @@
                                     </div>
                                     <div class="css_imgBox2">
                                         <div class="css_monitor">
-                                            <a
-                                                href="#none">
+                                            <a href="#none">
                                                 <img src="img/web_tablet.png" alt="모니터">
                                             </a>
                                         </div>
                                         <div class="css_img">
-                                            <a href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
+                                            <a
+                                                href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
                                                 <img src="img/pull_Blade Soul2.png" alt="블래이드 앤 소울">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="css_imgBox3">
                                         <div class="css_monitor">
-                                            <a
-                                                href="#none">
+                                            <a href="#none">
                                                 <img src="img/web_mobile.png" alt="모니터">
                                             </a>
                                         </div>
                                         <div class="css_img">
-                                            <a href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=480, height=846,top=100, left=200', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
+                                            <a
+                                                href="javascript:void(window.open('../portfolio/project/Responsive1/index.html', '_blank', 'width=480, height=846,top=100, left=200', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
                                                 <img src="img/pull_Blade Soul3.png" alt="블래이드 앤 소울">
                                             </a>
                                         </div>
@@ -516,7 +527,8 @@
                                             </a>
                                         </div>
                                         <div class="css_img">
-                                            <a href="javascript:void(window.open('../portfolio/project/Responsive2/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))" >
+                                            <a
+                                                href="javascript:void(window.open('../portfolio/project/Responsive2/index.html', '_blank', 'width=768, height=846,top=100, left=100', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
                                                 <img src="img/pull_enex2.png" alt="에넥스">
                                             </a>
                                         </div>
@@ -528,7 +540,8 @@
                                             </a>
                                         </div>
                                         <div class="css_img">
-                                            <a href="javascript:void(window.open('../portfolio/project/Responsive2/index.html', '_blank', 'width=480, height=846,top=100, left=200', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
+                                            <a
+                                                href="javascript:void(window.open('../portfolio/project/Responsive2/index.html', '_blank', 'width=480, height=846,top=100, left=200', 'scrollbars=yes', 'resizable=no', 'toolbar=no'))">
                                                 <img src="img/pull_enex2.png" alt="에넥스">
                                             </a>
                                         </div>
@@ -611,8 +624,8 @@
                     <ul class="cf" data-aos="fade-down">
                         <li id="design1">
                             <div class="design_img">
-                                <a href="../portfolio/project/CSS_2/index.html" target="_blank" class="work01"><img src="img/port_1.jpg"
-                                        alt="portfolio1"></a>
+                                <a href="../portfolio/project/CSS_2/index.html" target="_blank" class="work01"><img
+                                        src="img/port_1.jpg" alt="portfolio1"></a>
                             </div>
                             <div class="hover">
                                 <a href="../portfolio/project/CSS_2/index.html" target="_blank">
@@ -623,8 +636,8 @@
                         </li>
                         <li id="design2">
                             <div class="design_img">
-                                <a href="../portfolio/project/Responsive2/index.html" target="_blank"><img src="img/port_2.png"
-                                        alt="portfolio2"></a>
+                                <a href="../portfolio/project/Responsive2/index.html" target="_blank"><img
+                                        src="img/port_2.png" alt="portfolio2"></a>
                             </div>
                             <div class="hover">
                                 <a href="../portfolio/project/Responsive2/index.html" target="_blank">
@@ -647,8 +660,8 @@
                         </li>
                         <li id="design4" class="margin">
                             <div class="design_img">
-                                <a href="../portfolio/project/Responsive1/index.html " target="_blank"><img src="img/port_4.png"
-                                        alt="portfolio4"></a>
+                                <a href="../portfolio/project/Responsive1/index.html " target="_blank"><img
+                                        src="img/port_4.png" alt="portfolio4"></a>
                             </div>
                             <div class="hover">
                                 <a href="../portfolio/project/Responsive1/index.html" target="_blank">
@@ -659,8 +672,8 @@
                         </li>
                         <li id="design5">
                             <div class="design_img">
-                                <a href="../portfolio/project/CSS_1/index.html" target="_blank"><img src="img/port_5.png"
-                                        alt="portfolio5"></a>
+                                <a href="../portfolio/project/CSS_1/index.html" target="_blank"><img
+                                        src="img/port_5.png" alt="portfolio5"></a>
                             </div>
                             <div class="hover">
                                 <a href="../portfolio/project/CSS_1/index.html" target="_blank">

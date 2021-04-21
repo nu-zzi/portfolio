@@ -160,7 +160,7 @@ a {
 	height: 100%;
 	/* 	height: calc(100% - 50px); */
 	text-align: center;
-
+	z-index: 2;
 }
 
 #main .main_me img {
@@ -216,13 +216,51 @@ a {
 	}
 }
 
+/* 물결배경 */
 
+svg {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
 
-/* #profile {
-	width: 1200px;
-	height: 1000px;
-	position: relative;
-} */
+.wave {
+	animation: wave 3s linear;
+	animation-iteration-count: infinite;
+}
+
+#wave2 {
+	animation-duration: 5s;
+	fill: #b5e4ffd8;
+	animation-direction: reverse;
+}
+
+#wave3 {
+	animation-duration: 3s;
+	fill: #90c3f959;
+	animation-direction: reverse;
+}
+
+#wave4 {
+	animation-duration: 4s;
+	fill: #afe1ff;
+	opacity: 0.2;
+	animation-direction: reverse;
+}
+
+#wave5 {
+	animation-duration: 4s;
+	fill: #6fb4ec;
+	opacity: 0.2;
+	animation-direction: reverse;
+}
+
+@keyframes wave {
+	to {
+		transform: translateX(-100%);
+	}
+}
 
 .profile_me {
 	padding-top: 150px;
@@ -510,8 +548,8 @@ a {
 .css_imgBox2 {
 	position: absolute;
 	width: 200px;
-    top: 240px;
-    left: 50px;
+	top: 240px;
+	left: 50px;
 }
 
 .css_imgBox2 .css_monitor {
@@ -530,9 +568,9 @@ a {
 .css_imgBox2 .css_img {
 	position: absolute;
 	top: 30px;
-    left: 11px;
-    width: 178px;
-    height: 235px;
+	left: 11px;
+	width: 178px;
+	height: 235px;
 	overflow: hidden;
 }
 
@@ -552,9 +590,9 @@ a {
 .css_imgBox3 {
 	position: absolute;
 	width: 140px;
-    height: 360px;
-    top: 250px;
-    right: -105px;
+	height: 360px;
+	top: 250px;
+	right: -105px;
 }
 
 .css_imgBox3 .css_monitor {
@@ -572,9 +610,9 @@ a {
 .css_imgBox3 .css_img {
 	position: absolute;
 	top: 26px;
-    left: 10px;
-    width: 122px;
-    height: 243px;
+	left: 10px;
+	width: 122px;
+	height: 243px;
 	overflow: hidden;
 }
 
@@ -650,7 +688,7 @@ a {
 
 .swiper-container {
 	width: 91%;
-    height: 545px;
+	height: 545px;
 }
 
 .swiper-slide {
@@ -950,134 +988,3 @@ a {
 	background: url(../img/button_on.png) no-repeat;
 }
 
-/* 물결배경 */
-
-/*color, position, internal time*/
-#background_wave {
-	width: 100%;
-	min-width: 1200px;
-	height: 100%;
-	z-index: 1;
-	margin: 0 auto;
-}
-
-#ocean {
-	z-index: 100;
-}
-
-.wave {
-	position: absolute;
-	bottom: 0;
-	background: #dfecff;
-	display: inline-block;
-	height: 26%;
-	width: 10px;
-	position: absolute;
-	z-index: 5 !important;
-	animation-name: dostuff;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	transition-timing-function: ease-in-out;
-}
-
-.wave_middle {
-	position: absolute;
-	bottom: 0;
-	background: #b5e4ffb0;
-	display: inline-block;
-	height: 23%;
-	width: 10px;
-	position: absolute;
-	z-index: 5 !important;
-	animation-name: dostuff_mid;
-	animation-duration: 2.02s;
-	animation-iteration-count: infinite;
-	transition-timing-function: ease-in-out;
-}
-
-.wave_bottom {
-	position: absolute;
-	bottom: 0;
-	background: #afe1ff;
-	display: inline-block;
-	height: 18%;
-	width: 10px;
-	position: absolute;
-	z-index: 5 !important;
-	animation-name: dostuff_bot;
-	animation-duration: 2.04s;
-	animation-iteration-count: infinite;
-	transition-timing-function: ease-in-out;
-}
-
-.wave_light {
-	position: absolute;
-	bottom: 0;
-	background: #90c3f959;
-	display: inline-block;
-	height: 15%;
-	width: 10px;
-	position: absolute;
-	z-index: 5 !important;
-	animation-name: dostuff_light;
-	animation-duration: 2.06s;
-	animation-iteration-count: infinite;
-	transition-timing-function: ease-in-out;
-}
-
-/* amplitude animation*/
-@keyframes dostuff {
-	0% {
-		height: 26%;
-	}
-
-	50% {
-		height: 31%;
-	}
-
-	100% {
-		height: 26%;
-	}
-}
-
-@keyframes dostuff_mid {
-	0% {
-		height: 23%;
-	}
-
-	50% {
-		height: 27%;
-	}
-
-	100% {
-		height: 23%;
-	}
-}
-
-@keyframes dostuff_bot {
-	0% {
-		height: 18%;
-	}
-
-	50% {
-		height: 23%;
-	}
-
-	100% {
-		height: 18%;
-	}
-}
-
-@keyframes dostuff_light {
-	0% {
-		height: 15%;
-	}
-
-	50% {
-		height: 19%;
-	}
-
-	100% {
-		height: 15%;
-	}
-}

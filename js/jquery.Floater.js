@@ -1,12 +1,12 @@
 /**
-*  Jquery floater ·¹ÀÌ¾î¸¦ Ç×»ó È­¸é¿¡ ¶°ÀÖ°Å³ª µû¶ó ´Ù´Ïµµ·Ï Ã³¸®
+*  Jquery floater ë ˆì´ì–´ë¥¼ í•­ìƒ í™”ë©´ì— ë– ìˆê±°ë‚˜ ë”°ë¼ ë‹¤ë‹ˆë„ë¡ ì²˜ë¦¬
 *
 * options
 *
-*  allwaysTop : true , Ç×»ó À§. false µû¶ó´Ù´Ïµµ·Ï
-*  speed  : 1000  µû¶ó´Ù´Ï´Â ¼Óµµ
-*  bottom : true Ç×»ó ÇÏ´Ü¿¡. false µû¶ó´Ù´Ïµµ·Ï
-*  default_x : Áß¾ÓÁ¤·ÄÀÏ¶§ ¿¤¸®¸ÕÆ® ¿·¿¡ Äü¸Ş´º ºÙÈ÷±â
+*  allwaysTop : true , í•­ìƒ ìœ„. false ë”°ë¼ë‹¤ë‹ˆë„ë¡
+*  speed  : 1000  ë”°ë¼ë‹¤ë‹ˆëŠ” ì†ë„
+*  bottom : true í•­ìƒ í•˜ë‹¨ì—. false ë”°ë¼ë‹¤ë‹ˆë„ë¡
+*  default_x : ì¤‘ì•™ì •ë ¬ì¼ë•Œ ì—˜ë¦¬ë¨¼íŠ¸ ì˜†ì— í€µë©”ë‰´ ë¶™íˆê¸°
 * 
 * @since 2009-10-30
 * @author jsyang <yakuyaku@gmail.com>
@@ -14,79 +14,79 @@
 *
 */
 
-//Âü°í1) (function($) { /* ³»¿ë»ı·« */ })(jQuery); ¿¡¼­ ÀÎÀÚ·Î ³Ñ°ÜÁÖ´Â jQuery´Â jQuery °´Ã¼ÀÌ°í °á±¹ $ ¸Å°³º¯¼ö°¡ ÇÔ¼ö ³»¿¡¼­ jQuery °´Ã¼·Î »ç¿ëµÈ´Ù.
-//Âü°í2) jquery¸¦ ´Ù¸¥ ¶óÀÌºê·¯¸®¿Í ÇÔ²² »ç¿ëÇÒ ¶§ $ ¶§¹®¿¡ Ãæµ¹ÀÌ ÀÏ¾î³ª´Â °æ¿ì°¡ ÀÖÀ» ¼ö ÀÖ´Ù. ÀÌ¸¦ ¹Ì¿¬¿¡ ¹æÁöÇÏ±â À§ÇØ¼­ À§¿Í °°ÀÌ »ç¿ëÇÑ´Ù.
+//ì°¸ê³ 1) (function($) { /* ë‚´ìš©ìƒëµ */ })(jQuery); ì—ì„œ ì¸ìë¡œ ë„˜ê²¨ì£¼ëŠ” jQueryëŠ” jQuery ê°ì²´ì´ê³  ê²°êµ­ $ ë§¤ê°œë³€ìˆ˜ê°€ í•¨ìˆ˜ ë‚´ì—ì„œ jQuery ê°ì²´ë¡œ ì‚¬ìš©ëœë‹¤.
+//ì°¸ê³ 2) jqueryë¥¼ ë‹¤ë¥¸ ë¼ì´ë¸ŒëŸ¬ë¦¬ì™€ í•¨ê»˜ ì‚¬ìš©í•  ë•Œ $ ë•Œë¬¸ì— ì¶©ëŒì´ ì¼ì–´ë‚˜ëŠ” ê²½ìš°ê°€ ìˆì„ ìˆ˜ ìˆë‹¤. ì´ë¥¼ ë¯¸ì—°ì— ë°©ì§€í•˜ê¸° ìœ„í•´ì„œ ìœ„ì™€ ê°™ì´ ì‚¬ìš©í•œë‹¤.
 
-(function($) {  //(function($) { /* ³»¿ë»ı·« */ })(jQuery); ÀÇ ÀÇ¹Ì´Â jQuery ¶ó´Â ÀÎÀÚ¸¦ $ ¶ó´Â ¸Å°³º¯¼ö·Î ³Ñ°Ü¹Ş¾Æ »ç¿ëÇÏ´Â Áï½Ã ½ÇÇà ÇÔ¼ö¸¦ ÀÇ¹Ì
+(function($) {  //(function($) { /* ë‚´ìš©ìƒëµ */ })(jQuery); ì˜ ì˜ë¯¸ëŠ” jQuery ë¼ëŠ” ì¸ìë¥¼ $ ë¼ëŠ” ë§¤ê°œë³€ìˆ˜ë¡œ ë„˜ê²¨ë°›ì•„ ì‚¬ìš©í•˜ëŠ” ì¦‰ì‹œ ì‹¤í–‰ í•¨ìˆ˜ë¥¼ ì˜ë¯¸
 
-	$.extend($.fn, {  //$.extend´Â ´Ù¼öÀÇ °´Ã¼¸¦ ÇÏ³ªÀÇ °´Ã¼·Î ÇÕÄ¡´Â merge±â´ÉÀ» ¼öÇà. jQuery prototype ( $.fn) °´Ã¼¸¦ È®Àå ÇÏ¿© jQuery()ÇÔ¼ö¿¡ ¿¬°áµÉ ¼öÀÖ´Â »õ·Î¿î ¸Ş¼Òµå¸¦ Á¦°ø.
+	$.extend($.fn, {  //$.extendëŠ” ë‹¤ìˆ˜ì˜ ê°ì²´ë¥¼ í•˜ë‚˜ì˜ ê°ì²´ë¡œ í•©ì¹˜ëŠ” mergeê¸°ëŠ¥ì„ ìˆ˜í–‰. jQuery prototype ( $.fn) ê°ì²´ë¥¼ í™•ì¥ í•˜ì—¬ jQuery()í•¨ìˆ˜ì— ì—°ê²°ë  ìˆ˜ìˆëŠ” ìƒˆë¡œìš´ ë©”ì†Œë“œë¥¼ ì œê³µ.
 		Floater : function(setting)  
 		{
-			var options = $.extend($.fn.Floater.defaults, setting); //¶°ÀÖ°Å³ª µû¶ó´Ù´Ï´Â ±âº»°ª,¼¼ÆÃ°ª
+			var options = $.extend($.fn.Floater.defaults, setting); //ë– ìˆê±°ë‚˜ ë”°ë¼ë‹¤ë‹ˆëŠ” ê¸°ë³¸ê°’,ì„¸íŒ…ê°’
 			var box   = this;
-			var initTop = options.initTop; //ÅÇ¸Ş´º À§Ä¡ 250
+			var initTop = options.initTop; //íƒ­ë©”ë‰´ ìœ„ì¹˜ 250
 			
-			if(options.bottom) { //¸¸¾à ÇÏ´Ü¿¡ ÀÖ´Ù¸é
-				bottom_pos = $(window).height() - $(box).height() - initTop; //À©µµ¿ì³ôÀÌ-¹Ú½º³ôÀÌ-ÅÇ¸Ş´º À§Ä¡ 250
+			if(options.bottom) { //ë§Œì•½ í•˜ë‹¨ì— ìˆë‹¤ë©´
+				bottom_pos = $(window).height() - $(box).height() - initTop; //ìœˆë„ìš°ë†’ì´-ë°•ìŠ¤ë†’ì´-íƒ­ë©”ë‰´ ìœ„ì¹˜ 250
 				$(box).css('top' , bottom_pos);
-				initTop = bottom_pos; //ÃÊ±â°ªÀ¸·Î ÀÌµ¿
+				initTop = bottom_pos; //ì´ˆê¸°ê°’ìœ¼ë¡œ ì´ë™
 			}
 
-			if(options.default_x) { //Áß¾ÓÁ¤·ÄÀÏ¶§ ¿¤¸®¸ÕÆ® ¿·¿¡ Äü¸Ş´º ºÙÈ÷±â
+			if(options.default_x) { //ì¤‘ì•™ì •ë ¬ì¼ë•Œ ì—˜ë¦¬ë¨¼íŠ¸ ì˜†ì— í€µë©”ë‰´ ë¶™íˆê¸°
 				box.css('left' , getX($(options.default_x)) );
-				if(box.css('display')=='none') box.css('display','block'); //¹Ú½ºº¸ÀÌ°Ô
+				if(box.css('display')=='none') box.css('display','block'); //ë°•ìŠ¤ë³´ì´ê²Œ
 				
-				$(window).bind('resize', function() { //.bind() ¸Ş¼­µå´Â ¸» ±×´ë·Î °³Ã¼¿Í ÀÌº¥Æ®¸¦ ¹­¾îÁÖ´Â ¿ªÇÒ. Å©±â¿¡ ¸Â°Ô Á¶Á¤ÇÏ°í 
-					box.css('left' , getX($(options.default_x))); //¹Ú½º¸¦ ¿ŞÂÊÀ¸·Î ÇÏ¿© Äü¸Ş´º ºÙÀÌ±â
+				$(window).bind('resize', function() { //.bind() ë©”ì„œë“œëŠ” ë§ ê·¸ëŒ€ë¡œ ê°œì²´ì™€ ì´ë²¤íŠ¸ë¥¼ ë¬¶ì–´ì£¼ëŠ” ì—­í• . í¬ê¸°ì— ë§ê²Œ ì¡°ì •í•˜ê³  
+					box.css('left' , getX($(options.default_x))); //ë°•ìŠ¤ë¥¼ ì™¼ìª½ìœ¼ë¡œ í•˜ì—¬ í€µë©”ë‰´ ë¶™ì´ê¸°
 				});
 
 			}
 
-			var prevTop = initTop; //Äü¸Ş´ºÀ§Ä¡¸¦ ÀÌÀüÅ¾ÀÇ À§Ä¡¿¡ ´ã°í 
+			var prevTop = initTop; //í€µë©”ë‰´ìœ„ì¹˜ë¥¼ ì´ì „íƒ‘ì˜ ìœ„ì¹˜ì— ë‹´ê³  
 
-			$(window).bind('scroll', function(e){adjustTop();}); //.bind() ¸Ş¼­µå´Â ¸» ±×´ë·Î °³Ã¼¿Í ÀÌº¥Æ®¸¦ ¹­¾îÁÖ´Â ¿ªÇÒ. ¸ÇÀ§ ¿ÀºêÁ§Æ®°¡ °ªÀÌ º¯°æµÇ¸é È£Ãâ.
+			$(window).bind('scroll', function(e){adjustTop();}); //.bind() ë©”ì„œë“œëŠ” ë§ ê·¸ëŒ€ë¡œ ê°œì²´ì™€ ì´ë²¤íŠ¸ë¥¼ ë¬¶ì–´ì£¼ëŠ” ì—­í• . ë§¨ìœ„ ì˜¤ë¸Œì íŠ¸ê°€ ê°’ì´ ë³€ê²½ë˜ë©´ í˜¸ì¶œ.
 
-			function getX(el) //getX ¹× getY´Â Ãß»ó ¸Ş¼­µå.(Á¢±ÙÀÚ¸Ş¼­µå).EL ±âº»(.,[],()),EL »ê¼ú¿¬»êÀÚ( +,-,*, /,%)... https://codedragon.tistory.com/6009 
+			function getX(el) //getX ë° getYëŠ” ì¶”ìƒ ë©”ì„œë“œ.(ì ‘ê·¼ìë©”ì„œë“œ).EL ê¸°ë³¸(.,[],()),EL ì‚°ìˆ ì—°ì‚°ì( +,-,*, /,%)... https://codedragon.tistory.com/6009 
 
 			{
-				return el.get(0).offsetLeft + el.width(); //offsetParent ¿ä¼Ò¸¦ ±âÁØÀ¸·Î ¿ŞÂÊ À§Ä¡ (ÇÈ¼¿ ´ÜÀ§)¸¦ ¹İÈ¯ +°¡·Î°ª
+				return el.get(0).offsetLeft + el.width(); //offsetParent ìš”ì†Œë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì™¼ìª½ ìœ„ì¹˜ (í”½ì…€ ë‹¨ìœ„)ë¥¼ ë°˜í™˜ +ê°€ë¡œê°’
 			};
 
-			function adjustTop() //¸ÇÀ§ ¿ÀºêÁ§Æ®°¡ °ªÀÌ º¯°æµÇ¸é È£Ãâ.
+			function adjustTop() //ë§¨ìœ„ ì˜¤ë¸Œì íŠ¸ê°€ ê°’ì´ ë³€ê²½ë˜ë©´ í˜¸ì¶œ.
 			{
-				var newTop = computeTop();  //topÀÇ À§Ä¡ °è»êÇÏ¿© newtop¿¡ ´ã°í
+				var newTop = computeTop();  //topì˜ ìœ„ì¹˜ ê³„ì‚°í•˜ì—¬ newtopì— ë‹´ê³ 
 				if (newTop <= initTop) newTop = initTop; 
-				if (prevTop != newTop) { //»õ·Î¿î Å¾À§Ä¡¿Í ÀÌÀüÅ¾ÀÇ À§Ä¡°¡ ´Ù¸£´Ù¸é
-					layerMove(newTop); //»õ·Î¿î Å¾ÀÇ ·¹ÀÌ¾îÀÌµ¿
-					prevTop = newTop; //»õ·Î¿î Å¾ÀÇ À§Ä¡¸¦ ÀÌÀüÅ¾ÀÇ À§Ä¡·Î
+				if (prevTop != newTop) { //ìƒˆë¡œìš´ íƒ‘ìœ„ì¹˜ì™€ ì´ì „íƒ‘ì˜ ìœ„ì¹˜ê°€ ë‹¤ë¥´ë‹¤ë©´
+					layerMove(newTop); //ìƒˆë¡œìš´ íƒ‘ì˜ ë ˆì´ì–´ì´ë™
+					prevTop = newTop; //ìƒˆë¡œìš´ íƒ‘ì˜ ìœ„ì¹˜ë¥¼ ì´ì „íƒ‘ì˜ ìœ„ì¹˜ë¡œ
 				}
 			};
 
-			function layerMove(dest) //¸ñÀûÁö·Î ·¹ÀÌ¾îÀÌµ¿
+			function layerMove(dest) //ëª©ì ì§€ë¡œ ë ˆì´ì–´ì´ë™
 			{
-				if(options.alwaysTop) { //true ,  Ç×»ó À§¿¡ À§Ä¡ÇÑ´Ù¸é
+				if(options.alwaysTop) { //true ,  í•­ìƒ ìœ„ì— ìœ„ì¹˜í•œë‹¤ë©´
 					//var posx=$(window).scrollLeft() + $(window).width() - $(box).width();
-					$(box).css({'top': dest}); //topÀ¸·Î ÀÌµ¿
-				}else{ //±×·¸Áö¾Ê´Ù¸é
-					$(box).stop();  //¸ØÃè´Ù°¡
-					$(box).animate({'top': dest},{'duration':options.speed}); //Å¾À¸·Î ÀÌµ¿
+					$(box).css({'top': dest}); //topìœ¼ë¡œ ì´ë™
+				}else{ //ê·¸ë ‡ì§€ì•Šë‹¤ë©´
+					$(box).stop();  //ë©ˆì·„ë‹¤ê°€
+					$(box).animate({'top': dest},{'duration':options.speed}); //íƒ‘ìœ¼ë¡œ ì´ë™
 				}
 			};
 
-			function computeTop() //compute:°è»êÇÏ´Ù. topÀÇ À§Ä¡ °è»ê
+			function computeTop() //compute:ê³„ì‚°í•˜ë‹¤. topì˜ ìœ„ì¹˜ ê³„ì‚°
 			{
-				return $(window).scrollTop() + initTop; //»ó´Ü¿¡¼­ ÅÇ¸Ş´ºÀ§Ä¡·Î ¹İÈ¯
+				return $(window).scrollTop() + initTop; //ìƒë‹¨ì—ì„œ íƒ­ë©”ë‰´ìœ„ì¹˜ë¡œ ë°˜í™˜
 			};
 		}
 
 	});
 
 	$.fn.Floater.defaults = {
-		'alwaysTop' : false ,  //trueÀÌ¸é °íÁ¤
-		'bottom'    : false , //trueÀÌ¸é ¾Æ·¡¸¦ ±âÁØÀ¸·Î ÅÇ¸Ş´º ÀÌµ¿
+		'alwaysTop' : false ,  //trueì´ë©´ ê³ ì •
+		'bottom'    : false , //trueì´ë©´ ì•„ë˜ë¥¼ ê¸°ì¤€ìœ¼ë¡œ íƒ­ë©”ë‰´ ì´ë™
 		'default_x' : false ,
-		'initTop'   : 50 , //½ºÅ©·ÑÀ§Ä¡
-		'speed' : 30  //¼Óµµ
+		'initTop'   : 50 , //ìŠ¤í¬ë¡¤ìœ„ì¹˜
+		'speed' : 30  //ì†ë„
 	};
 
 })(jQuery);
