@@ -551,7 +551,8 @@ h4 {
 
 .cont1_L_2 {
     margin-top: 65px;
-    width: 100%;
+    width: 95%;
+    border: 1px solid #eee;
 }
 
 .cont1_L_2 .cont1_L_2_btn {
@@ -676,7 +677,6 @@ h4 {
 }
 
 
-
 .content2 {
     margin-top: 70px;
     width: 100%;
@@ -703,7 +703,7 @@ h4 {
 }
 
 .content2 {
-    border: 1px solid #999;
+    border: 1px solid #eee;
 }
 
 /* 탭메뉴1 */
